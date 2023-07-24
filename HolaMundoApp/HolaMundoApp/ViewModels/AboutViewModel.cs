@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HolaMundoApp.ViewModels;
+using System;
 using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -7,8 +8,6 @@ namespace HolaMundoApp.ViewModels
 {
     public class AboutViewModel : BaseViewModel
     {
-
-        public property 
         public AboutViewModel()
         {
             Title = "About";

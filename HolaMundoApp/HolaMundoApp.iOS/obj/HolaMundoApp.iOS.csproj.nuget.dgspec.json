@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CFA\\GESTION DE APLICACION\\CAPACITACION\\capacitacionmobile\\HolaMudoApp\\HolaMundoApp\\HolaMundoApp.iOS\\HolaMundoApp.iOS.csproj": {}
+    "C:\\Users\\dmosquera\\source\\repos\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.iOS\\HolaMundoApp.iOS.csproj": {}
   },
   "projects": {
-    "C:\\CFA\\GESTION DE APLICACION\\CAPACITACION\\capacitacionmobile\\HolaMudoApp\\HolaMundoApp\\HolaMundoApp.iOS\\HolaMundoApp.iOS.csproj": {
+    "C:\\Users\\dmosquera\\source\\repos\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.iOS\\HolaMundoApp.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CFA\\GESTION DE APLICACION\\CAPACITACION\\capacitacionmobile\\HolaMudoApp\\HolaMundoApp\\HolaMundoApp.iOS\\HolaMundoApp.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\dmosquera\\source\\repos\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.iOS\\HolaMundoApp.iOS.csproj",
         "projectName": "HolaMundoApp.iOS",
-        "projectPath": "C:\\CFA\\GESTION DE APLICACION\\CAPACITACION\\capacitacionmobile\\HolaMudoApp\\HolaMundoApp\\HolaMundoApp.iOS\\HolaMundoApp.iOS.csproj",
+        "projectPath": "C:\\Users\\dmosquera\\source\\repos\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.iOS\\HolaMundoApp.iOS.csproj",
         "packagesPath": "C:\\Users\\dmosquera\\.nuget\\packages\\",
-        "outputPath": "C:\\CFA\\GESTION DE APLICACION\\CAPACITACION\\capacitacionmobile\\HolaMudoApp\\HolaMundoApp\\HolaMundoApp.iOS\\obj\\",
+        "outputPath": "C:\\Users\\dmosquera\\source\\repos\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -34,8 +34,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\CFA\\GESTION DE APLICACION\\CAPACITACION\\capacitacionmobile\\HolaMudoApp\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.csproj": {
-                "projectPath": "C:\\CFA\\GESTION DE APLICACION\\CAPACITACION\\capacitacionmobile\\HolaMudoApp\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.csproj"
+              "C:\\Users\\dmosquera\\source\\repos\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.csproj": {
+                "projectPath": "C:\\Users\\dmosquera\\source\\repos\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.csproj"
               }
             }
           }
@@ -70,14 +70,14 @@
         }
       }
     },
-    "C:\\CFA\\GESTION DE APLICACION\\CAPACITACION\\capacitacionmobile\\HolaMudoApp\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.csproj": {
+    "C:\\Users\\dmosquera\\source\\repos\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CFA\\GESTION DE APLICACION\\CAPACITACION\\capacitacionmobile\\HolaMudoApp\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.csproj",
+        "projectUniqueName": "C:\\Users\\dmosquera\\source\\repos\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.csproj",
         "projectName": "HolaMundoApp",
-        "projectPath": "C:\\CFA\\GESTION DE APLICACION\\CAPACITACION\\capacitacionmobile\\HolaMudoApp\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.csproj",
+        "projectPath": "C:\\Users\\dmosquera\\source\\repos\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.csproj",
         "packagesPath": "C:\\Users\\dmosquera\\.nuget\\packages\\",
-        "outputPath": "C:\\CFA\\GESTION DE APLICACION\\CAPACITACION\\capacitacionmobile\\HolaMudoApp\\HolaMundoApp\\HolaMundoApp\\obj\\",
+        "outputPath": "C:\\Users\\dmosquera\\source\\repos\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

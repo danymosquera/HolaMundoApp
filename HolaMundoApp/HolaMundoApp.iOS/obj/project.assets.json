@@ -1254,11 +1254,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CFA\\GESTION DE APLICACION\\CAPACITACION\\capacitacionmobile\\HolaMudoApp\\HolaMundoApp\\HolaMundoApp.iOS\\HolaMundoApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\dmosquera\\source\\repos\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.iOS\\HolaMundoApp.iOS.csproj",
       "projectName": "HolaMundoApp.iOS",
-      "projectPath": "C:\\CFA\\GESTION DE APLICACION\\CAPACITACION\\capacitacionmobile\\HolaMudoApp\\HolaMundoApp\\HolaMundoApp.iOS\\HolaMundoApp.iOS.csproj",
+      "projectPath": "C:\\Users\\dmosquera\\source\\repos\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.iOS\\HolaMundoApp.iOS.csproj",
       "packagesPath": "C:\\Users\\dmosquera\\.nuget\\packages\\",
-      "outputPath": "C:\\CFA\\GESTION DE APLICACION\\CAPACITACION\\capacitacionmobile\\HolaMudoApp\\HolaMundoApp\\HolaMundoApp.iOS\\obj\\",
+      "outputPath": "C:\\Users\\dmosquera\\source\\repos\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1281,8 +1281,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\CFA\\GESTION DE APLICACION\\CAPACITACION\\capacitacionmobile\\HolaMudoApp\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.csproj": {
-              "projectPath": "C:\\CFA\\GESTION DE APLICACION\\CAPACITACION\\capacitacionmobile\\HolaMudoApp\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.csproj"
+            "C:\\Users\\dmosquera\\source\\repos\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.csproj": {
+              "projectPath": "C:\\Users\\dmosquera\\source\\repos\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.csproj"
             }
           }
         }

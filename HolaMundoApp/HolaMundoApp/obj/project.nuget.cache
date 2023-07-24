@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ivrG++epcV1hY3eUkMtA97EuqNP6EswScyhbluyJgxTGYM0+EIAu0NwRvnlxxqSCuQmq99NlwbKd1Csa++Vr2g==",
+  "dgSpecHash": "qRTxs22P9QKH1v/WdUfjc7H/et/DQ1M01VasPuIgoQZ+uzrJePMYwjTLShZaqxiF5UGeJ/er/fDr7K8LO3w1Sw==",
   "success": true,
-  "projectFilePath": "C:\\CFA\\GESTION DE APLICACION\\CAPACITACION\\capacitacionmobile\\HolaMudoApp\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.csproj",
+  "projectFilePath": "C:\\Users\\dmosquera\\source\\repos\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dmosquera\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\dmosquera\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
