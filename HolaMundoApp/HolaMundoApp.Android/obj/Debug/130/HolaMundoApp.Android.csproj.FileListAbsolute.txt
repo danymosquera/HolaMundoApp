@@ -1280,3 +1280,4 @@ C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.Android\o
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.Android\obj\Debug\130\stamp\_GenerateJavaStubs.stamp
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.Android\obj\Debug\130\res\drawable\descarga.png
