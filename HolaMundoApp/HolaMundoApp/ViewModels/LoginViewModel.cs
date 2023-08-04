@@ -71,23 +71,20 @@ namespace HolaMundoApp.ViewModels
 
         private async void OnLoginClicked(object obj)
         {
-            if (ValidateFiels())
+            // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
+            if (ValidateFields())
             {
-                //await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
-                if (Username == "pepito" && Password == "pepito")
-                {
-                    WelcomeMessage = "Inicio de sesión exitoso, " + "¡Bienvenido! " + Username + "!";
-                    MessageColor = Color.Green;
-                    await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
-                }
-                else
-                {
-                    ShowMessage = true;
-                    MessageColor = Color.Red;
-                    WelcomeMessage = "Usuario o contraseña incorrectos";
-                }
+                await Shell.Current.GoToAsync($"//{nameof(ClientsPage)}");
+            }
+            else
+            {
+                await Application.Current.MainPage.DisplayAlert(
+                        AppResources.LoginPageInvalidLoginTitle,
+                        LoginPagLoginPageInvalidLoginMessage,
+                        AppResources.OkText);
             }
         }
+
         private bool ValidateFiels()
         {
             if (!string.IsNullOrEmpty(Username) && !string.IsNullOrEmpty(Password))

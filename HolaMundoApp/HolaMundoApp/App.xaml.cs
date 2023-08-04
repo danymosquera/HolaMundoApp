@@ -11,6 +11,7 @@ namespace HolaMundoApp
         public App()
         {
             InitializeComponent();
+            Startup.Initialize();
             MainPage = new AppShell();
         }
 
