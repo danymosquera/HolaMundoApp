@@ -4,29 +4,28 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:viewModels="clr-namespace:HolaMundoApp.ViewModels"
+             xmlns:utility="clr-namespace:HolaMundoApp.Utilities"
+             utility:ViewModelLocator.AutoWireViewModel="True"
+              x:DataType="viewModels:LoginViewModel"
+             xmlns:resx="clr-namespace:HolaMundoApp.Resx"
              xmlns:local="clr-namespace:HolaMundoApp;assembly=HolaMundoApp"
              mc:Ignorable="d"
              x:Class="HolaMundoApp.Views.LoginPage"
              Shell.NavBarIsVisible="False">
-    
-    <ContentPage.BindingContext>
-        <viewModels:LoginViewModel/>
-    </ContentPage.BindingContext >
-    
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Image Source="{local:ImageResource HolaMundoApp.Resources.Images.descarga.png}" WidthRequest="200" HeightRequest="200" />
+            <Image Source="{local:ImageResource HolaMundoApp.Resources.Images.descarga.png}" WidthRequest="150" HeightRequest="150" />
 
-            <Label Text="Welcome Back" FontAttributes="Bold" HorizontalOptions="Center" FontSize="26" Margin="0,0,0,5" WidthRequest="300" TextColor="{OnPlatform Android=Black, iOS=Black}"/>
-            <Label Text="Sign in to continue" FontSize="15" TextColor="Black" WidthRequest="300"/>
-            <Frame HasShadow="{OnPlatform iOS=false, Android=True}" Padding="{OnPlatform Android=8,iOS=0}" CornerRadius="{OnPlatform Android=7}"/>
-            <Entry Text="{Binding Username, Mode=TwoWay}" Placeholder="User" Margin="10"/>
-            <Entry Text="{Binding Password, Mode=TwoWay}" Placeholder="Password" IsPassword="True" Margin="10"/>
+            <Label Text="Welcome Back" FontAttributes="Bold" HorizontalOptions="Center" FontSize="26" Margin="0,0,0,0" WidthRequest="300" TextColor="{OnPlatform Android=Black, iOS=Black}"/>
+            <!--<Label Text="Sign in to continue" FontSize="15" TextColor="Black" WidthRequest="300"/>-->
+            <!--<Frame HasShadow="{OnPlatform iOS=false, Android=True}" Padding="{OnPlatform Android=8,iOS=0}" CornerRadius="{OnPlatform Android=7}"/>-->
+            <Entry Text="{Binding UserName, Mode=TwoWay}" Placeholder="User" Margin="5"/>
+            <Entry Text="{Binding Password, Mode=TwoWay}" Placeholder="Password" IsPassword="True" Margin="5"/>
 
             <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"  Style="{StaticResource ButtonRed}"/>
-            <Button VerticalOptions="Center" Text="Don´t have an acount? Sing Up" TextColor="{OnPlatform iOS=Black, Android=Black}" BackgroundColor="White" FontSize="{OnPlatform iOS=12,Android=11}"/>
+            <!--<Button VerticalOptions="Center" Text="Don´t have an acount? Sing Up" TextColor="{OnPlatform iOS=Black, Android=Black}" BackgroundColor="White" FontSize="{OnPlatform iOS=12,Android=11}"/>-->
 
-            <Label Text="{Binding WelcomeMessage}" FontSize="Subtitle" TextColor="{Binding MessageColor}" HorizontalOptions="Center" Margin="0,30,0,0" IsVisible="{Binding ShowMessage}"/>
+            <!--<Label Text="{Binding WelcomeMessage}" FontSize="Subtitle" TextColor="{Binding MessageColor}" HorizontalOptions="Center" Margin="0,30,0,0" IsVisible="{Binding ShowMessage}"/>-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

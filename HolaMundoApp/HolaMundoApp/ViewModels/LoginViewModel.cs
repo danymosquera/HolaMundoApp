@@ -1,100 +1,51 @@
-﻿using HolaMundoApp.Views;
+﻿using HolaMundoApp.Resx;
+using HolaMundoApp.Services;
+using HolaMundoApp.Views;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Runtime.InteropServices.ComTypes;
+using System.Text; 
 using Xamarin.Forms;
 
 namespace HolaMundoApp.ViewModels
 {
     public class LoginViewModel : BaseViewModel
     {
-        private string _username;
-        private string _password;
-        private bool _showMessage;
-        private string _welcomeMessage;
-        private Color _messageColor;
+        private readonly IAccountService _accountService;
 
-        public Command LoginCommand { get; }
-        public string Username { get => _username; 
-                                     set {  if (_username != value)
-                                            { 
-                                                _username = value; 
-                                                OnPropertyChanged(); 
-                                            } 
-                                     } 
-                                }
-        public string Password { get => _password;
-                                    set
-                                    {
-                                        if (_password != value)
-                                        {
-                                            _password = value;
-                                            OnPropertyChanged();
-                                        }
-                                    }
-                                }
-        public bool ShowMessage {   get => _showMessage;
-                                    set
-                                    {
-                                        if (_showMessage != value)
-                                        {
-                                            _showMessage = value;
-                                            OnPropertyChanged();
-                                        }
-                                    }
-                                }
-        public string WelcomeMessage {  get => _welcomeMessage;
-                                        set
-                                        {
-                                            if (_welcomeMessage != value)
-                                            {
-                                                _welcomeMessage = value;
-                                                OnPropertyChanged();
-                                            }
-                                        }
-                                    }
-        public Color MessageColor { get => _messageColor; 
-                                    set
-                                    {
-                                        if (_messageColor != value)
-                                        {
-                                            _messageColor = value;
-                                            OnPropertyChanged();
-                                        }
-                                    }
-                                }
-
-        public LoginViewModel()
+        public LoginViewModel(IAccountService accountService)
         {
+            _accountService = accountService;
             LoginCommand = new Command(OnLoginClicked);
         }
+
+        private string _username;
+        private string _password;
+
+        public string UserName { get => _username; set => SetProperty(ref _username, value); }
+        public string Password { get => _password; set => SetProperty(ref _password, value); }
+        public Command LoginCommand { get; }
 
         private async void OnLoginClicked(object obj)
         {
             // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
-            if (ValidateFields())
+            if (ValidateFields() && await _accountService.LoginAsync(UserName, Password))
             {
-                await Shell.Current.GoToAsync($"//{nameof(ClientsPage)}");
+                await Shell.Current.GoToAsync($"//{nameof(ClientPage)}");
             }
             else
             {
-                await Application.Current.MainPage.DisplayAlert(
-                        AppResources.LoginPageInvalidLoginTitle,
-                        LoginPagLoginPageInvalidLoginMessage,
-                        AppResources.OkText);
+                await Application.Current.MainPage.DisplayAlert(AppResources.LoginPageInvalidLoginTitle,
+                    AppResources.LoginPageInvalidLoginMessage, AppResources.OkTex);
             }
         }
-
-        private bool ValidateFiels()
+        private bool ValidateFields()
         {
-            if (!string.IsNullOrEmpty(Username) && !string.IsNullOrEmpty(Password))
-            {
-                return true;
-            }
-            else
+            if (string.IsNullOrEmpty(UserName) || string.IsNullOrEmpty(Password))
             {
                 return false;
             }
+            return true;
         }
     }
 }

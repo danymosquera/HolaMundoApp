@@ -9,13 +9,14 @@
         <ResourceDictionary>
             <Color x:Key="Primary">#2196F3</Color>
             <Style x:Key="ButtonRed" TargetType="Button">
-                <Setter Property="Background" Value="black"></Setter>
-                <Setter Property="BorderColor" Value="Gold"></Setter>
-                <Setter Property="BorderRadius" Value="10"></Setter>
-                <Setter Property="BorderWidth" Value="1.5"></Setter>
+                <Setter Property="Background" Value= "#2b1b36"></Setter>
+                <Setter Property="BorderColor" Value="#e6b5d8"></Setter>
+                <Setter Property="BorderRadius" Value="15"></Setter>
+                <Setter Property="BorderWidth" Value="2"></Setter>
             </Style>
                 <Style TargetType="Button">
                 <Setter Property="TextColor" Value="White"></Setter>
+                <Setter Property="Font" Value="Arial"></Setter>
                 <Setter Property="VisualStateManager.VisualStateGroups">
                     <VisualStateGroupList>
                         <VisualStateGroup x:Name="CommonStates">

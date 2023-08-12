@@ -10,12 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace HolaMundoApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ClientPage : TabbedPage
+    public partial class ClientPage : ContentPage
     {
         public ClientPage()
         {
             InitializeComponent();
-            this.BindingContext = new ClientsViewModel();
         }
     }
 }

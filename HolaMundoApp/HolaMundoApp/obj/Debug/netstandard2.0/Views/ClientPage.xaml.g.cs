@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("HolaMundoApp.Views.ClientPage.xaml", "Views/ClientPage.xaml", typeof(global::HolaMundoApp.Views.ClientsPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("HolaMundoApp.Views.ClientPage.xaml", "Views/ClientPage.xaml", typeof(global::HolaMundoApp.Views.ClientPage))]
 
 namespace HolaMundoApp.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\ClientPage.xaml")]
-    public partial class ClientsPage : global::Xamarin.Forms.ContentPage {
+    public partial class ClientPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ClientsPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ClientPage));
         }
     }
 }

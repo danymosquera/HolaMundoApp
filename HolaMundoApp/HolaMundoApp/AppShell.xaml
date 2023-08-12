@@ -93,9 +93,8 @@
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>-->
     <FlyoutItem Title="Clients" Icon="icon_about.png">
-        <ShellContent Route="ClientsPage" ContentTemplate="{DataTemplate local:ClientsPage}" />
+        <ShellContent Route="ClientsPage" ContentTemplate="{DataTemplate local:ClientPage}" />
     </FlyoutItem>
-
 
 
 
