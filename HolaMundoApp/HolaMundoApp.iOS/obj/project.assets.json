@@ -573,11 +573,29 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/5.0.0.2612": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2612"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        }
+      },
       "HolaMundoApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Autofac": "7.0.1",
+          "Autofac": "7.1.0",
           "Autofac.Extensions.DependencyInjection": "8.0.0",
           "Newtonsoft.Json": "13.0.3",
           "Refit": "7.0.0",
@@ -585,8 +603,9 @@
           "Refit.Newtonsoft.Json": "7.0.0",
           "Xamarin.CommunityToolkit": "2.0.6",
           "Xamarin.CommunityToolkit.Markup": "2.0.6",
-          "Xamarin.Essentials": "1.7.7",
-          "Xamarin.Forms": "5.0.0.2578"
+          "Xamarin.Essentials": "1.8.0",
+          "Xamarin.Forms": "5.0.0.2612",
+          "Xamarin.Forms.Maps": "5.0.0.2612"
         },
         "compile": {
           "bin/placeholder/HolaMundoApp.dll": {}
@@ -1168,11 +1187,29 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/5.0.0.2612": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2612"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        }
+      },
       "HolaMundoApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Autofac": "7.0.1",
+          "Autofac": "7.1.0",
           "Autofac.Extensions.DependencyInjection": "8.0.0",
           "Newtonsoft.Json": "13.0.3",
           "Refit": "7.0.0",
@@ -1180,8 +1217,9 @@
           "Refit.Newtonsoft.Json": "7.0.0",
           "Xamarin.CommunityToolkit": "2.0.6",
           "Xamarin.CommunityToolkit.Markup": "2.0.6",
-          "Xamarin.Essentials": "1.7.7",
-          "Xamarin.Forms": "5.0.0.2578"
+          "Xamarin.Essentials": "1.8.0",
+          "Xamarin.Forms": "5.0.0.2612",
+          "Xamarin.Forms.Maps": "5.0.0.2612"
         },
         "compile": {
           "bin/placeholder/HolaMundoApp.dll": {}
@@ -1763,11 +1801,29 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/5.0.0.2612": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2612"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        }
+      },
       "HolaMundoApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Autofac": "7.0.1",
+          "Autofac": "7.1.0",
           "Autofac.Extensions.DependencyInjection": "8.0.0",
           "Newtonsoft.Json": "13.0.3",
           "Refit": "7.0.0",
@@ -1775,8 +1831,9 @@
           "Refit.Newtonsoft.Json": "7.0.0",
           "Xamarin.CommunityToolkit": "2.0.6",
           "Xamarin.CommunityToolkit.Markup": "2.0.6",
-          "Xamarin.Essentials": "1.7.7",
-          "Xamarin.Forms": "5.0.0.2578"
+          "Xamarin.Essentials": "1.8.0",
+          "Xamarin.Forms": "5.0.0.2612",
+          "Xamarin.Forms.Maps": "5.0.0.2612"
         },
         "compile": {
           "bin/placeholder/HolaMundoApp.dll": {}
@@ -2358,11 +2415,29 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/5.0.0.2612": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2612"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        }
+      },
       "HolaMundoApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Autofac": "7.0.1",
+          "Autofac": "7.1.0",
           "Autofac.Extensions.DependencyInjection": "8.0.0",
           "Newtonsoft.Json": "13.0.3",
           "Refit": "7.0.0",
@@ -2370,8 +2445,9 @@
           "Refit.Newtonsoft.Json": "7.0.0",
           "Xamarin.CommunityToolkit": "2.0.6",
           "Xamarin.CommunityToolkit.Markup": "2.0.6",
-          "Xamarin.Essentials": "1.7.7",
-          "Xamarin.Forms": "5.0.0.2578"
+          "Xamarin.Essentials": "1.8.0",
+          "Xamarin.Forms": "5.0.0.2612",
+          "Xamarin.Forms.Maps": "5.0.0.2612"
         },
         "compile": {
           "bin/placeholder/HolaMundoApp.dll": {}
@@ -2953,11 +3029,29 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/5.0.0.2612": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2612"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        }
+      },
       "HolaMundoApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Autofac": "7.0.1",
+          "Autofac": "7.1.0",
           "Autofac.Extensions.DependencyInjection": "8.0.0",
           "Newtonsoft.Json": "13.0.3",
           "Refit": "7.0.0",
@@ -2965,8 +3059,9 @@
           "Refit.Newtonsoft.Json": "7.0.0",
           "Xamarin.CommunityToolkit": "2.0.6",
           "Xamarin.CommunityToolkit.Markup": "2.0.6",
-          "Xamarin.Essentials": "1.7.7",
-          "Xamarin.Forms": "5.0.0.2578"
+          "Xamarin.Essentials": "1.8.0",
+          "Xamarin.Forms": "5.0.0.2612",
+          "Xamarin.Forms.Maps": "5.0.0.2612"
         },
         "compile": {
           "bin/placeholder/HolaMundoApp.dll": {}
@@ -4022,6 +4117,42 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.Maps/5.0.0.2612": {
+      "sha512": "nQWQ6skgD4VhCyCu1pDvuxPPsZiaU5T4X4xn61nfT9+z5Rtx2Nq8y3pYbUhK3J7op5YyMUa9o3E6t7Y4+W5Uag==",
+      "type": "package",
+      "path": "xamarin.forms.maps/5.0.0.2612",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Assets/xamarin_128x128.png",
+        "Licenses/LICENSE",
+        "Licenses/THIRD-PARTY-NOTICES.txt",
+        "lib/MonoAndroid13.0/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid13.0/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid13.0/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.macOS.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.xml",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.xml",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.xml",
+        "lib/tizen40/Xamarin.Forms.Maps.Tizen.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Maps.UWP.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Maps.UWP.pri",
+        "lib/uap10.0.14393/Xamarin.Forms.Maps.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.pri",
+        "lib/uap10.0.16299/Xamarin.Forms.Maps.dll",
+        "xamarin.forms.maps.5.0.0.2612.nupkg.sha512",
+        "xamarin.forms.maps.nuspec"
+      ]
+    },
     "HolaMundoApp/1.0.0": {
       "type": "project",
       "path": "../HolaMundoApp/HolaMundoApp.csproj",
@@ -4145,5 +4276,49 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Degradación del paquete detectada: Autofac de 7.1.0 a 7.0.1. Haga referencia al paquete directamente desde el proyecto para seleccionar una versión diferente. \r\n HolaMundoApp.iOS -> HolaMundoApp -> Autofac (>= 7.1.0) \r\n HolaMundoApp.iOS -> Autofac (>= 7.0.1)",
+      "libraryId": "Autofac",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-arm64",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Degradación del paquete detectada: Xamarin.Essentials de 1.8.0 a 1.7.7. Haga referencia al paquete directamente desde el proyecto para seleccionar una versión diferente. \r\n HolaMundoApp.iOS -> HolaMundoApp -> Xamarin.Essentials (>= 1.8.0) \r\n HolaMundoApp.iOS -> Xamarin.Essentials (>= 1.7.7)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-arm64",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Degradación del paquete detectada: Xamarin.Forms de 5.0.0.2612 a 5.0.0.2578. Haga referencia al paquete directamente desde el proyecto para seleccionar una versión diferente. \r\n HolaMundoApp.iOS -> HolaMundoApp -> Xamarin.Forms (>= 5.0.0.2612) \r\n HolaMundoApp.iOS -> Xamarin.Forms (>= 5.0.0.2578)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-arm64",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
 }
