@@ -593,7 +593,7 @@
       },
       "HolaMundoApp/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Autofac": "7.1.0",
           "Autofac.Extensions.DependencyInjection": "8.0.0",
@@ -1207,7 +1207,7 @@
       },
       "HolaMundoApp/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Autofac": "7.1.0",
           "Autofac.Extensions.DependencyInjection": "8.0.0",
@@ -1821,7 +1821,7 @@
       },
       "HolaMundoApp/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Autofac": "7.1.0",
           "Autofac.Extensions.DependencyInjection": "8.0.0",
@@ -2435,7 +2435,7 @@
       },
       "HolaMundoApp/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Autofac": "7.1.0",
           "Autofac.Extensions.DependencyInjection": "8.0.0",
@@ -3049,7 +3049,7 @@
       },
       "HolaMundoApp/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Autofac": "7.1.0",
           "Autofac.Extensions.DependencyInjection": "8.0.0",

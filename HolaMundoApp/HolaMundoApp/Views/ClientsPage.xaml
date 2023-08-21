@@ -1,76 +1,90 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:viewModels="clr-namespace:HolaMundoApp.ViewModels"
              xmlns:models="clr-namespace:HolaMundoApp.Data.Models"
-             xmlns:utility="clr-namespace:HolaMundoApp.Utilities"
              xmlns:controls="clr-namespace:HolaMundoApp.Controls"
+             xmlns:viewModels="clr-namespace:HolaMundoApp.ViewModels"
+             xmlns:utility="clr-namespace:HolaMundoApp.Utilities"
              utility:ViewModelLocator.AutoWireViewModel="True"
-             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:DataType="viewModels:ClientsViewModel"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:Class="HolaMundoApp.Views.ClientsPage"
-             Padding="10,10">
+             Padding="10">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <DataTemplate x:DataType="models:Client"
-                x:Key="ClientDefaultTemplate">
-                <StackLayout>
+            <DataTemplate x:Key="ClientDefaultTemplate" x:DataType="models:Client">
+                <StackLayout Margin="0,5">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:ClientsViewModel}}, Path=ClientTappedCommand}"
+                                              CommandParameter="{Binding .}"/>
+                    </StackLayout.GestureRecognizers>
                     <Frame CornerRadius="15"
-                       BackgroundColor="AliceBlue">
+                           BackgroundColor="AliceBlue">
                         <Grid ColumnDefinitions="*,*">
-                            <Label Grid.Column="0" Text="{Binding Name}"/>
-                            <Label Grid.Column="1" Text="{Binding Dna}"/>
+                            <Label Text="{Binding Name}" TextColor="Black" />
+                            <Label Grid.Column="1" Text="{Binding Dna}" TextColor="Black"/>
                         </Grid>
                     </Frame>
-                    <BoxView BackgroundColor="Transparent" HeightRequest="5" />
+                </StackLayout>
+            </DataTemplate>
+            <DataTemplate x:Key="ClientOneToFiveTemplate" x:DataType="models:Client">
+                <StackLayout Margin="0,5">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:ClientsViewModel}}, Path=ClientTappedCommand}"
+                          CommandParameter="{Binding .}"/>
+                    </StackLayout.GestureRecognizers>
+                    <Frame CornerRadius="15"
+                           BackgroundColor="LightGray">
+                        <Grid ColumnDefinitions="*,*">
+                            <Label Text="{Binding Name}" TextColor="Black"/>
+                            <Label Grid.Column="1" Text="{Binding Dna}" TextColor="Black"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+            </DataTemplate>
+            <DataTemplate x:Key="ClientSixToTenTemplate" x:DataType="models:Client">
+                <StackLayout Margin="0,5">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:ClientsViewModel}}, Path=ClientTappedCommand}"
+                          CommandParameter="{Binding .}"/>
+                    </StackLayout.GestureRecognizers>
+                    <Frame CornerRadius="15"
+                           BackgroundColor="LightCoral">
+                        <Grid ColumnDefinitions="*,*">
+                            <Label Text="{Binding Name}" TextColor="Black"/>
+                            <Label Grid.Column="1" Text="{Binding Dna}" TextColor="Black"/>
+                        </Grid>
+                    </Frame>
                 </StackLayout>
             </DataTemplate>
 
-            <DataTemplate x:DataType="models:Client"
-                x:Key="ClientOneToFiveTemplate">
-                <StackLayout>
-                    <Frame CornerRadius="15"
-                       BackgroundColor="LightCoral">
-                        <Grid ColumnDefinitions="*,*">
-                            <Label Grid.Column="0" Text="{Binding Name}"/>
-                            <Label Grid.Column="1" Text="{Binding Dna}"/>
-                        </Grid>
-                    </Frame>
-                    <BoxView BackgroundColor="Transparent" HeightRequest="5" />
-                </StackLayout>
-            </DataTemplate>
-
-            <DataTemplate x:DataType="models:Client"
-                x:Key="ClientSixToTenTemplate">
-                <StackLayout>
-                    <Frame CornerRadius="15"
-                       BackgroundColor="LightGreen">
-                        <Grid ColumnDefinitions="*,*">
-                            <Label Grid.Column="0" Text="{Binding Name}"/>
-                            <Label Grid.Column="1" Text="{Binding Dna}"/>
-                        </Grid>
-                    </Frame>
-                    <BoxView BackgroundColor="Transparent" HeightRequest="5" />
-                </StackLayout>
-            </DataTemplate>
-
-            <controls:ClientTemplateSelector
-                x:Key="ClientTemplateSelector"
-                DefaultTemplate="{StaticResource ClientDefaultTemplate}"
-                OneToFiveTemplate="{StaticResource ClientOneToFiveTemplate}"
-                SixToTenTemplate="{StaticResource ClientSixToTenTemplate}"/>
+            <controls:ClientTemplateSelector x:Key="ClientTemplateSelector"
+                                             DefaultTemplate="{StaticResource ClientDefaultTemplate}"
+                                             OneToFiveTemplate="{StaticResource ClientOneToFiveTemplate}"
+                                             SixToTenTemplate="{StaticResource ClientSixToTenTemplate}" />
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Behaviors>
         <xct:EventToCommandBehavior EventName="Appearing" Command="{Binding AppearingCommand}"/>
     </ContentPage.Behaviors>
     <ContentPage.Content>
-        <StackLayout>
-            <CollectionView ItemsSource="{Binding Clients}"
-                            EmptyView="No Clients to display"                            
-                            ItemTemplate="{StaticResource ClientTemplateSelector}">
-            </CollectionView>
-        </StackLayout>
+        <Grid>
+            <!--Page Content-->
+            <StackLayout IsVisible="{Binding IsNotBusy}" VerticalOptions="FillAndExpand">
+                <CollectionView ItemsSource="{Binding Clients}"
+                        EmptyView="No Clients to display"                 
+                        ItemTemplate="{StaticResource ClientTemplateSelector}">
+                    <CollectionView.Header>
+                        <Grid ColumnDefinitions="*,*" Margin="0,10">
+                            <Label Text="Name" TextColor="Black"/>
+                            <Label Grid.Column="1" Text="DNA" TextColor="Black"/>
+                        </Grid>
+                    </CollectionView.Header>
+                </CollectionView>
+            </StackLayout>
+            <!--Loading Indicator-->
+            <ActivityIndicator IsRunning="{Binding IsBusy}" VerticalOptions="Center" />
+        </Grid>
+
     </ContentPage.Content>
 </ContentPage>
-

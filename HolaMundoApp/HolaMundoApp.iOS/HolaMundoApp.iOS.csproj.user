@@ -4,5 +4,6 @@
     <SelectedDevice>Simulador</SelectedDevice>
     <SelectedPlatformGroup>Simulator</SelectedPlatformGroup>
     <ActiveDebugProfile>Simulador</ActiveDebugProfile>
+    <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
 </Project>

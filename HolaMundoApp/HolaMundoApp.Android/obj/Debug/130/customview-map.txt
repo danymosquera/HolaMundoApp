@@ -1,4 +1,7 @@
 @string/appbar_scrolling_view_behavior;C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.Android\obj\Debug\130\lp\56\jl\res\layout\rootlayout.xml
+adaptive-icon;obj\Debug\130\res\mipmap-anydpi-v26\ic_cart.xml
+adaptive-icon;obj\Debug\130\res\mipmap-anydpi-v26\ic_clients.xml
+adaptive-icon;obj\Debug\130\res\mipmap-anydpi-v26\ic_logout.xml
 adaptive-icon;obj\Debug\130\res\mipmap-anydpi-v26\icon.xml
 adaptive-icon;obj\Debug\130\res\mipmap-anydpi-v26\icon_round.xml
 alpha;C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.Android\obj\Debug\130\lp\56\jl\res\anim\enterfromleft.xml
@@ -10,6 +13,9 @@ androidx.appcompat.widget.Toolbar;C:\Users\dmosquera\source\repos\HolaMundoApp\H
 androidx.coordinatorlayout.widget.CoordinatorLayout;C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.Android\obj\Debug\130\lp\56\jl\res\layout\rootlayout.xml
 androidx.coordinatorlayout.widget.CoordinatorLayout;C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.Android\obj\Debug\130\lp\56\jl\res\layout\shellcontent.xml
 attr;C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.Android\obj\Debug\130\lp\56\jl\res\values\attrs.xml
+background;obj\Debug\130\res\mipmap-anydpi-v26\ic_cart.xml
+background;obj\Debug\130\res\mipmap-anydpi-v26\ic_clients.xml
+background;obj\Debug\130\res\mipmap-anydpi-v26\ic_logout.xml
 background;obj\Debug\130\res\mipmap-anydpi-v26\icon.xml
 background;obj\Debug\130\res\mipmap-anydpi-v26\icon_round.xml
 cache-path;C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.Android\obj\Debug\130\lp\54\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
@@ -24,6 +30,9 @@ com.google.android.material.tabs.TabLayout;C:\Users\dmosquera\source\repos\HolaM
 declare-styleable;C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.Android\obj\Debug\130\lp\56\jl\res\values\attrs.xml
 external-cache-path;C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.Android\obj\Debug\130\lp\54\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-path;C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.Android\obj\Debug\130\lp\54\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+foreground;obj\Debug\130\res\mipmap-anydpi-v26\ic_cart.xml
+foreground;obj\Debug\130\res\mipmap-anydpi-v26\ic_clients.xml
+foreground;obj\Debug\130\res\mipmap-anydpi-v26\ic_logout.xml
 foreground;obj\Debug\130\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Debug\130\res\mipmap-anydpi-v26\icon_round.xml
 FrameLayout;C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.Android\obj\Debug\130\lp\53\jl\res\layout\camerafragment.xml

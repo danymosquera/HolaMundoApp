@@ -15,17 +15,10 @@
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
             <Image Source="{local:ImageResource HolaMundoApp.Resources.Images.descarga.png}" WidthRequest="150" HeightRequest="150" />
-
-            <Label Text="Welcome Back" FontAttributes="Bold" HorizontalOptions="Center" FontSize="26" Margin="0,0,0,0" WidthRequest="300" TextColor="{OnPlatform Android=Black, iOS=Black}"/>
-            <!--<Label Text="Sign in to continue" FontSize="15" TextColor="Black" WidthRequest="300"/>-->
-            <!--<Frame HasShadow="{OnPlatform iOS=false, Android=True}" Padding="{OnPlatform Android=8,iOS=0}" CornerRadius="{OnPlatform Android=7}"/>-->
-            <Entry Text="{Binding UserName, Mode=TwoWay}" Placeholder="User" Margin="5"/>
-            <Entry Text="{Binding Password, Mode=TwoWay}" Placeholder="Password" IsPassword="True" Margin="5"/>
-
-            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"  Style="{StaticResource ButtonRed}"/>
-            <!--<Button VerticalOptions="Center" Text="Don´t have an acount? Sing Up" TextColor="{OnPlatform iOS=Black, Android=Black}" BackgroundColor="White" FontSize="{OnPlatform iOS=12,Android=11}"/>-->
-
-            <!--<Label Text="{Binding WelcomeMessage}" FontSize="Subtitle" TextColor="{Binding MessageColor}" HorizontalOptions="Center" Margin="0,30,0,0" IsVisible="{Binding ShowMessage}"/>-->
+            <Label Text="Welcome Back" FontAttributes="Bold" HorizontalOptions="Center" FontSize="26" Margin="0,0,0,0" WidthRequest="300"/>
+            <Entry Text="{Binding UserName}" Placeholder="{Static resx:AppResources.LoginPageUserNameText}" TextColor="Black" />
+            <Entry Text="{Binding Password}" Placeholder="{Static resx:AppResources.LoginPagePasswordText}" IsPassword="True" TextColor="Black" />
+            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}" BorderColor = "#e6b5d8" Background="#2b1b36" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

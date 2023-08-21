@@ -12,7 +12,7 @@
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <application android:label="HolaMundoApp.Android" android:theme="@style/MainTheme" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true" android:extractNativeLibs="true">
     <uses-library android:name="org.apache.http.legacy" android:required="false" />
-    <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="HolaMundoApp" android:theme="@style/MainTheme" android:name="crc64e48147e7bd2e75a5.MainActivity" android:exported="true">
+    <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="T-Shirt" android:theme="@style/MainTheme" android:name="crc64e48147e7bd2e75a5.MainActivity" android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
