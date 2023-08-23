@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ViewModels\ProductsViewModel.cs" />
+    <Compile Remove="Views\ProductsPage.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\ProductsPage.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Resources\Images\descarga.png" />
   </ItemGroup>
 
