@@ -23,7 +23,7 @@ namespace HolaMundoApp.Data.Models
 
         public string ImageUrl { get; set; }
 
-        public bool IsAvailabe { get; set; }
+         public bool IsAvailabe { get; set; }
 
         public DateTime? LastPurchase { get; set; }
 

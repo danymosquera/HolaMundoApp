@@ -6,12 +6,29 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.CommunityToolkit.ObjectModel;
 using Xamarin.Forms;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace HolaMundoApp.ViewModels
 {
     public class ProductsViewModel : BaseViewModel
     {
         private readonly IProductService _productService;
+        private bool isRefreshing;
+        public bool IsRefreshing
+        {
+            get => this.isRefreshing;
+            set => this.SetValue(ref this.isRefreshing, value);
+        }
+
+        private ObservableCollection<Product> products;
+
+        public ObservableCollection<Product> Products
+        {
+            get => this.products;
+            set => this.SetValue(ref this.products, value);
+        }
 
         public ProductsViewModel(IProductService productService)
         {
@@ -21,11 +38,12 @@ namespace HolaMundoApp.ViewModels
             _productService = productService;
         }
 
-        public ObservableRangeCollection<Product> Products { get; set; } = new ObservableRangeCollection<Product>();
+        //public ObservableRangeCollection<Product> Products { get; set; } = new ObservableRangeCollection<Product>();
 
         public ICommand AppearingCommand { get; set; }
 
         public ICommand ProductTappedCommand { get; set; }
+
 
         private async Task OnAppearingAsync()
         {
@@ -38,10 +56,10 @@ namespace HolaMundoApp.ViewModels
             {
                 IsBusy = true;
                 var products = await _productService.GetProducts();
-                if (products != null)
-                {
-                    Products.ReplaceRange(products);
-                }
+                //if (products != null)
+                //{
+                //    Products.ReplaceRange(products);
+                //}
             }
             catch (Exception ex)
             {

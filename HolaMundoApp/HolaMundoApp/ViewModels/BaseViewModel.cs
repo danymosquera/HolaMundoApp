@@ -1,9 +1,12 @@
-﻿using Xamarin.CommunityToolkit.ObjectModel;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using Xamarin.CommunityToolkit.ObjectModel;
 
 
 namespace HolaMundoApp.ViewModels
 {
-    public class BaseViewModel : ObservableObject
+    public class BaseViewModel : ObservableObject 
     {
         bool isBusy;
         public bool IsBusy
@@ -34,5 +37,17 @@ namespace HolaMundoApp.ViewModels
             get { return title; }
             set { SetProperty(ref title, value); }
         }
+
+        protected void SetValue<T>(ref T backingField, T value, [CallerMemberName] string propertyName = null)
+        {
+            if (EqualityComparer<T>.Default.Equals(backingField, value))
+            {
+                return;
+            }
+
+            backingField = value;
+            OnPropertyChanged(propertyName);
+        }
+
     }
 }
