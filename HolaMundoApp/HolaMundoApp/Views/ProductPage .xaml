@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:viewModels="clr-namespace:HolaMundoApp.ViewModels"
+             xmlns:converters="clr-namespace:HolaMundoApp.Converters"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:DataType="viewModels:ProductViewModel"
+              xmlns:local="clr-namespace:HolaMundoApp;assembly=HolaMundoApp"
+             Title="Product"
+             x:Class="HolaMundoApp.Views.ProductPage">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <converters:DoubleToColorConverter x:Key="DoubleToColorConverter" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <ContentPage.Behaviors>
+    <xct:EventToCommandBehavior EventName="Appearing" Command="{Binding AppearingCommand}"/>
+  </ContentPage.Behaviors>
+  <ContentPage.Content>
+    <StackLayout Padding="20" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+       <Label Text="{Binding Product.Name}" VerticalOptions="Start"
+          HorizontalOptions="Center" Style="{StaticResource Heading1}"/>
+            <Image Source="{local:ImageResource HolaMundoApp.Resources.Images.Orange.jpg}" WidthRequest="150" HeightRequest="200" />
+            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto">
+            <Label Grid.Column="0" Grid.Row="0" Text="Name:" />
+            <Label Grid.Column="1" Grid.Row="0" Text="{Binding Product.Name}" />
+
+            <Label Grid.Column="0" Grid.Row="1" Text="Price:" />
+            <Label Grid.Column="1" Grid.Row="1" Text="{Binding Product.Price}" />
+
+            <Label Grid.Column="0" Grid.Row="2" Text="Stock:" />
+            <Label Grid.Column="1" Grid.Row="2" Text="{Binding Product.Stock}" />
+      </Grid>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

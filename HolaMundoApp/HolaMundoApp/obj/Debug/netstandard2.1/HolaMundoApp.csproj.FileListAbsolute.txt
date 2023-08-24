@@ -13,6 +13,8 @@ C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\Views\ClientPage.xaml.g.cs
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\Views\ClientsPage.xaml.g.cs
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\Views\LoginPage.xaml.g.cs
+C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\Views\ProductPage .xaml.g.cs
+C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\Views\ProductsPage.xaml.g.cs
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\HolaMundoApp.AssemblyInfoInputs.cache
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\HolaMundoApp.AssemblyInfo.cs
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\HolaMundoApp.csproj.CoreCompileInputs.cache
