@@ -1,7 +1,3 @@
-C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\bin\Debug\netstandard2.1\HolaMundoApp.deps.json
-C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\bin\Debug\netstandard2.1\HolaMundoApp.dll
-C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\bin\Debug\netstandard2.1\ref\HolaMundoApp.dll
-C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\bin\Debug\netstandard2.1\HolaMundoApp.pdb
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\HolaMundoApp.csproj.AssemblyReference.cache
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\HolaMundoApp.Resx.AppResources.resources
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\HolaMundoApp.csproj.GenerateResource.cache
@@ -18,7 +14,11 @@ C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\HolaMundoApp.AssemblyInfoInputs.cache
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\HolaMundoApp.AssemblyInfo.cs
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\HolaMundoApp.csproj.CoreCompileInputs.cache
-C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\XamlC.stamp
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\HolaMundoApp.dll
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\refint\HolaMundoApp.dll
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\HolaMundoApp.pdb
+C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\bin\Debug\netstandard2.1\HolaMundoApp.deps.json
+C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\bin\Debug\netstandard2.1\HolaMundoApp.dll
+C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\bin\Debug\netstandard2.1\ref\HolaMundoApp.dll
+C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\bin\Debug\netstandard2.1\HolaMundoApp.pdb
+C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\XamlC.stamp

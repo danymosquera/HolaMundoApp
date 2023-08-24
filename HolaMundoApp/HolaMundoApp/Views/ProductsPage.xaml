@@ -9,7 +9,6 @@
              x:DataType="viewModels:ProductsViewModel"
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:Class="HolaMundoApp.Views.ProductsPage"
-             xmlns:local="clr-namespace:HolaMundoApp;assembly=HolaMundoApp"
              Title="Products"
              Padding="10">
     <ContentPage.Resources>
@@ -20,60 +19,57 @@
                         <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:ProductsViewModel}}, Path=ProductTappedCommand}"
                                               CommandParameter="{Binding .}"/>
                     </StackLayout.GestureRecognizers>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Column="0" 
+                                VerticalOptions="Center">
+                            <Label FontAttributes="Bold"
+                                    FontSize="Medium" Text="{Binding Name}"
+                                    TextColor="Black">
+                            </Label>
+                            <Label FontAttributes="Bold" Text="{Binding Price, StringFormat='Price: {0:C2}'}"
+                                TextColor="Navy">
+                            </Label>
+                            <Label Text="{Binding Stock, StringFormat='Stock: {0:N2}'}"
+                                TextColor="Black">
+                            </Label>
+                        </StackLayout>
+                        <Image Grid.Column="1" Source="{Binding ImageUrl}"
+                            WidthRequest="80"  HeightRequest="100">
+                        </Image>
+                        <Image  Grid.Column="2" Source="ic_add"></Image>
+                    </Grid>
                 </StackLayout>
             </DataTemplate>
+            
             <controls:ProductTemplateSelector x:Key="ProductTemplateSelector"
                                              DefaultTemplate="{StaticResource ProductDefaultTemplate}" />
         </ResourceDictionary>
     </ContentPage.Resources>
+    
     <ContentPage.Behaviors>
         <xct:EventToCommandBehavior EventName="Appearing" Command="{Binding AppearingCommand}"/>
     </ContentPage.Behaviors>
-    <!--<ContentPage.ToolbarItems>
-        <ToolbarItem Icon="ic_add.png" Command="{Binding AddProductCommand}"/>
-    </ContentPage.ToolbarItems>-->
+
     <ContentPage.Content>
-        <StackLayout
-            BindingContext="{Binding Products}"
-            Padding="8">
-            <ListView
-                IsRefreshing="{Binding IsRefreshing}"
-                HasUnevenRows="True"
-                ItemsSource="{Binding Products}">
-                <ListView.ItemTemplate>
-                    <DataTemplate x:DataType="models:Product">
-                        <ViewCell>
-                            <Grid>
-                                <!--<Grid.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding SelectProductCommand}"/>
-                                </Grid.GestureRecognizers>-->
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                </Grid.ColumnDefinitions>
-                                <StackLayout Grid.Column="0" 
-                                    VerticalOptions="Center">
-                                    <Label FontAttributes="Bold"
-                                        FontSize="Medium" Text="{Binding Name}"
-                                        TextColor="Black">
-                                    </Label>
-                                    <Label Text="{Binding Price, StringFormat='Price: {0:C2}'}"
-                                        TextColor="Navy">
-                                    </Label>
-                                    <Label Text="{Binding Stock, StringFormat='Stock: {0:N2}'}"
-                                        TextColor="Black">
-                                    </Label>
-                                </StackLayout>
-                                <Image Grid.Column="1" Source="{Binding ImageUrl}"
-                                    WidthRequest="100">
-                                </Image>
-                                <Image  Grid.Column="2" Source="ic_add"></Image>
-                            </Grid>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>
+        <Grid>
+            <StackLayout IsVisible="{Binding IsNotBusy}" VerticalOptions="FillAndExpand">
+                <CollectionView ItemsSource="{Binding Products}"
+                 EmptyView="No Products to display"                 
+                 ItemTemplate="{StaticResource ProductTemplateSelector}">
+                    <CollectionView.Header>
+                        <Grid>
+                            <Label Text="" TextColor="#2b1b36" FontAttributes="Bold"/>
+                            <Label Grid.Column="1" Text="" TextColor="#2b1b36" FontAttributes="Bold"/>
+                        </Grid>
+                    </CollectionView.Header>
+                </CollectionView>
+            </StackLayout>
+            <ActivityIndicator IsRunning="{Binding IsBusy}" VerticalOptions="Center" />
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

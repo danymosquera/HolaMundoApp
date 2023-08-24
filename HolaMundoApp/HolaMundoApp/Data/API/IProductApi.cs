@@ -12,7 +12,7 @@ namespace HolaMundoApp.Data.API
         [Get("/Products")]
         Task<List<Product>> GetProducts();
 
-        [Get("/Product/{id}")]
+        [Get("/Products/{id}")]
         Task<Product> GetProduct(int id);
     }
 }

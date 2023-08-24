@@ -22,13 +22,13 @@ namespace HolaMundoApp.ViewModels
             set => this.SetValue(ref this.isRefreshing, value);
         }
 
-        private ObservableCollection<Product> products;
+        //private ObservableCollection<Product> products;
 
-        public ObservableCollection<Product> Products
-        {
-            get => this.products;
-            set => this.SetValue(ref this.products, value);
-        }
+        //public ObservableCollection<Product> Products
+        //{
+        //    get => this.products;
+        //    set => this.SetValue(ref this.products, value);
+        //}
 
         public ProductsViewModel(IProductService productService)
         {
@@ -38,7 +38,7 @@ namespace HolaMundoApp.ViewModels
             _productService = productService;
         }
 
-        //public ObservableRangeCollection<Product> Products { get; set; } = new ObservableRangeCollection<Product>();
+        public ObservableRangeCollection<Product> Products { get; set; } = new ObservableRangeCollection<Product>();
 
         public ICommand AppearingCommand { get; set; }
 
@@ -56,10 +56,10 @@ namespace HolaMundoApp.ViewModels
             {
                 IsBusy = true;
                 var products = await _productService.GetProducts();
-                //if (products != null)
-                //{
-                //    Products.ReplaceRange(products);
-                //}
+                if (products != null)
+                {
+                    Products.ReplaceRange(products);
+                }
             }
             catch (Exception ex)
             {

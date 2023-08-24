@@ -85,6 +85,5 @@
             <!--Loading Indicator-->
             <ActivityIndicator IsRunning="{Binding IsBusy}" VerticalOptions="Center" />
         </Grid>
-
     </ContentPage.Content>
 </ContentPage>

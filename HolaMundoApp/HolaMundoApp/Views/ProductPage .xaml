@@ -19,18 +19,19 @@
   </ContentPage.Behaviors>
   <ContentPage.Content>
     <StackLayout Padding="20" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-       <Label Text="{Binding Product.Name}" VerticalOptions="Start"
-          HorizontalOptions="Center" Style="{StaticResource Heading1}"/>
-            <Image Source="{local:ImageResource HolaMundoApp.Resources.Images.Orange.jpg}" WidthRequest="150" HeightRequest="200" />
+            <Label Text="{Binding Product.Name}" VerticalOptions="Start" FontAttributes="Bold"
+          HorizontalOptions="Center" Style="{StaticResource Heading1}" FontSize="30" TextColor="#87059c"/>
+            <Image Source="{Binding Product.ImageUrl}" WidthRequest="200" HeightRequest="300">
+            </Image>
             <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto">
-            <Label Grid.Column="0" Grid.Row="0" Text="Name:" />
-            <Label Grid.Column="1" Grid.Row="0" Text="{Binding Product.Name}" />
+                <Label Grid.Column="0" Grid.Row="0" Text="Name:" FontAttributes="Bold"/>
+                <Label Grid.Column="1" Grid.Row="0" Text="{Binding Product.Name}" FontAttributes="Bold"/>
 
-            <Label Grid.Column="0" Grid.Row="1" Text="Price:" />
-            <Label Grid.Column="1" Grid.Row="1" Text="{Binding Product.Price}" />
+                <Label Grid.Column="0" Grid.Row="1" Text="Price:" FontAttributes="Bold" TextColor="Navy"/>
+                <Label Grid.Column="1" Grid.Row="1" Text="{Binding Product.Price, StringFormat='{0:C2}'}" FontAttributes="Bold" TextColor="Navy"/>
 
-            <Label Grid.Column="0" Grid.Row="2" Text="Stock:" />
-            <Label Grid.Column="1" Grid.Row="2" Text="{Binding Product.Stock}" />
+                <Label Grid.Column="0" Grid.Row="2" Text="Stock:" />
+                <Label Grid.Column="1" Grid.Row="2" Text="{Binding Product.Stock, StringFormat='{0:N2}'}" />
       </Grid>
     </StackLayout>
   </ContentPage.Content>
