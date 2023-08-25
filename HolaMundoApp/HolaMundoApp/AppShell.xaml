@@ -96,7 +96,7 @@
         <ShellContent Route="ClientsPage" ContentTemplate="{DataTemplate local:ClientsPage}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="Products" Icon="ic_cart.png">
+    <FlyoutItem Title="Products" Icon="ic_add.png">
         <ShellContent Route="ProductsPage" ContentTemplate="{DataTemplate local:ProductsPage}" />
     </FlyoutItem>
 

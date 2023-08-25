@@ -11,14 +11,46 @@
              xmlns:local="clr-namespace:HolaMundoApp;assembly=HolaMundoApp"
              mc:Ignorable="d"
              x:Class="HolaMundoApp.Views.LoginPage"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False" >
     <ContentPage.Content>
-        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Image Source="{local:ImageResource HolaMundoApp.Resources.Images.descarga.png}" WidthRequest="150" HeightRequest="150" />
-            <Label Text="Welcome Back" FontAttributes="Bold" HorizontalOptions="Center" FontSize="26" Margin="0,0,0,0" WidthRequest="300" TextColor="#2b1b36" />
-            <Entry Text="{Binding UserName}" Placeholder="{Static resx:AppResources.LoginPageUserNameText}" TextColor="Black" />
-            <Entry Text="{Binding Password}" Placeholder="{Static resx:AppResources.LoginPagePasswordText}" IsPassword="True" TextColor="Black" />
-            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}" BorderColor = "#e6b5d8" Background="#2b1b36" FontSize="16"/>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Image Source="icon.png" WidthRequest="150" HeightRequest="150" />
+            <StackLayout HorizontalOptions="Center" Orientation="Vertical" Margin="0,0,0,10">
+                <Label Text="Welcome Back" FontAttributes="Bold" HorizontalOptions="Center" FontSize="20" Margin="0,0,5,10" WidthRequest="300" TextColor="#2b1b36" />
+                <Label Text="Sign in to continue" TextColor="#2b1b36" FontSize="15" WidthRequest="300" />
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="Center" WidthRequest="{OnPlatform iOS=300,Android=300}" Orientation="Vertical"  >
+                <Label Text="UserName" FontSize="{OnPlatform Android=13}" TextColor="Black" />
+                <Frame HasShadow="{OnPlatform Android=true,iOS=false}" Padding="{OnPlatform Android=8,iOS=0}" CornerRadius="{OnPlatform Android=7}" >
+                    <Entry Text="{Binding UserName}" Placeholder="{Static resx:AppResources.LoginPageUserNameText}" TextColor="#2b1b36" MaxLength="25" Keyboard="Email" />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" Padding="0">
+                    <Label Text="Password" FontSize="{OnPlatform Android=13}" TextColor="Black" VerticalOptions="Center" WidthRequest="150"/>
+                    <Button Text="¿Forgot password?" TextColor="Black" FontSize="{OnPlatform Android=13}"
+                     WidthRequest="150" HorizontalOptions="End" BackgroundColor="White"
+                     HeightRequest="30" Padding="0" IsEnabled="True"/>
+                </StackLayout>
+                <Frame HasShadow="{OnPlatform Android=true,iOS=false}" Padding="{OnPlatform Android=8,iOS=0}" CornerRadius="{OnPlatform Android=7}">
+                    <Entry Text="{Binding Password}" Placeholder="{Static resx:AppResources.LoginPagePasswordText}" IsPassword="True" TextColor="#2b1b36" MaxLength="25" Keyboard="Numeric" />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="Center" Padding="0">
+                <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="True" Color="Black" Scale="0.8"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="6" HorizontalOptions="Center" Orientation="Vertical" >
+                <Button VerticalOptions="Center" Text="Log in" TextColor="White" CornerRadius ="50"  Command="{Binding LoginCommand}" BorderColor = "#2b1b36" Background="#2b1b36" FontSize="{OnPlatform Android=15}" BorderWidth="1.5"/>
+                <Button Text="Don't have an account? Sign Up" TextColor="{OnPlatform iOS=Black}"
+                            FontSize="{OnPlatform Android=11,iOS=12}"
+                            BackgroundColor="White"
+                            IsEnabled="{Binding IsEnabledTxt}"/>
+
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
