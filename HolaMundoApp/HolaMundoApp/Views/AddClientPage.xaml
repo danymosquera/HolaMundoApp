@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HolaMundoApp.Views.AddClientPage"
+             xmlns:viewModels="clr-namespace:HolaMundoApp.ViewModels"
+             xmlns:converters="clr-namespace:HolaMundoApp.Converters"
+             xmlns:refract="clr-namespace:Refractored.FabControl;assembly=Refractored.FabControl"
+             x:DataType="viewModels:AddClientViewModel"
+             Title="Register Client">
+    <ContentPage.Content>
+        <Grid RowSpacing="{OnPlatform iOS=25,Android=20}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <!--1-->
+                <RowDefinition Height="Auto"/>
+                <!--2-->
+                <RowDefinition Height="Auto"/>
+                <!--3-->
+                <RowDefinition Height="Auto"/>
+                <!--4-->
+                <RowDefinition Height="Auto"/>
+                <!--5-->
+                <RowDefinition Height="Auto"/>
+                <!--6-->
+                <RowDefinition Height="Auto"/>
+                <!--7-->
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Row="1">
+                <Image Source="ic_clients.png" HeightRequest="{OnPlatform iOS=60,Android=60}" 
+                       WidthRequest="{OnPlatform iOS=60,Android=60}" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                <Label Text="Name" FontSize="{OnPlatform Android=13}" TextColor="#2b1b36"/>
+                <Frame HasShadow="{OnPlatform Android=true,iOS=false}" 
+                     Padding="{OnPlatform Android=6,iOS=0}"
+                     CornerRadius="{OnPlatform Android=7}">
+                    <Entry Placeholder="Name" MaxLength="50" Keyboard="Text" 
+                           FontSize="{OnPlatform Android=15,iOS=16}" 
+                           Text="{Binding Name, Mode=TwoWay}" 
+                           IsEnabled="{Binding IsEnabledTxt}"/>
+
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Grid.Row="3" HorizontalOptions="Center" WidthRequest="300" Orientation="Horizontal" Spacing="20">
+                <StackLayout WidthRequest="140">
+                    <Label Text="Dna" FontSize="{OnPlatform Android=13}" TextColor="#2b1b36"/>
+                    <Frame HasShadow="{OnPlatform Android=true,iOS=false}"
+                           Padding="{OnPlatform Android=6,iOS=0}" CornerRadius="{OnPlatform Android=7}">
+                        <Entry Placeholder="Dna" MaxLength="20" Keyboard="Numeric"
+                               FontSize="{OnPlatform Android=15,iOS=16}" 
+                               Text="{Binding Dna, Mode=TwoWay}" 
+                               IsEnabled="{Binding IsEnabledTxt}" />
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Grid.Row="4" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                <Label Text="Latitude" FontSize="{OnPlatform Android=13}" TextColor="#2b1b36"/>
+                <Frame HasShadow="{OnPlatform Android=true,iOS=false}" 
+                     Padding="{OnPlatform Android=6,iOS=0}"
+                     CornerRadius="{OnPlatform Android=7}">
+                    <Entry Placeholder="Latitude" MaxLength="20" Keyboard="Numeric" 
+                           FontSize="{OnPlatform Android=15,iOS=16}" 
+                           Text="{Binding Latitude, Mode=TwoWay, StringFormat='{0:N2}'}" 
+                           IsEnabled="{Binding IsEnabledTxt}"/>
+
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Grid.Row="5" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                <Label Text="Longitude" FontSize="{OnPlatform Android=13}" TextColor="#2b1b36"/>
+                <Frame HasShadow="{OnPlatform Android=true,iOS=false}" 
+                     Padding="{OnPlatform Android=6,iOS=0}"
+                     CornerRadius="{OnPlatform Android=7}">
+                    <Entry Placeholder="Longitude" MaxLength="20" Keyboard="Numeric" 
+                           FontSize="{OnPlatform Android=15,iOS=16}" 
+                           Text="{Binding Longitude, Mode=TwoWay, StringFormat='{0:N2}'}" 
+                           IsEnabled="{Binding IsEnabledTxt}"/>
+
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Grid.Row="6" HorizontalOptions="Center">
+                <ActivityIndicator IsRunning="{Binding IsRunningTxt, Mode=TwoWay}"
+                       IsVisible="{Binding IsVisibleTxt, Mode=TwoWay}" Color="#2b1b36" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="7" HorizontalOptions="Center" Orientation="Vertical" >
+                <Button Text="to register" TextColor="White"
+                        Font="Montserrat-Medium.otf" FontSize="{OnPlatform Android=15}" 
+                        FontAttributes="Bold"
+                        BackgroundColor="#2b1b36" BorderColor="#2b1b36"
+                        BorderWidth="1.5" WidthRequest="300" HeightRequest="50"
+                        CornerRadius="7" 
+                        IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"/>
+            </StackLayout>
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "218MYrxxDEnUNUKFRzTkStZmRxcx/NYbyyMQEJ3QMLikRhoD3Dt4DSOmoQVeviBVtSsLX/sJdiz38rI/EEKNnw==",
+  "dgSpecHash": "Yx7Zqow09IbMwF9bKFMMFy1YmsTrkwIAtenSZrtQr4pTus+/IQeGPSnqq8LWSNsYtVeiYhZs0o+6woVcFuRIqg==",
   "success": true,
   "projectFilePath": "C:\\Users\\dmosquera\\source\\repos\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.Android\\HolaMundoApp.Android.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,8 @@
     "C:\\Users\\dmosquera\\.nuget\\packages\\refit\\7.0.0\\refit.7.0.0.nupkg.sha512",
     "C:\\Users\\dmosquera\\.nuget\\packages\\refit.httpclientfactory\\7.0.0\\refit.httpclientfactory.7.0.0.nupkg.sha512",
     "C:\\Users\\dmosquera\\.nuget\\packages\\refit.newtonsoft.json\\7.0.0\\refit.newtonsoft.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\dmosquera\\.nuget\\packages\\refractored.floatingactionbutton\\2.1.0\\refractored.floatingactionbutton.2.1.0.nupkg.sha512",
+    "C:\\Users\\dmosquera\\.nuget\\packages\\refractored.floatingactionbuttonforms\\2.1.0\\refractored.floatingactionbuttonforms.2.1.0.nupkg.sha512",
     "C:\\Users\\dmosquera\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
     "C:\\Users\\dmosquera\\.nuget\\packages\\skiasharp.views\\1.68.1.1\\skiasharp.views.1.68.1.1.nupkg.sha512",
     "C:\\Users\\dmosquera\\.nuget\\packages\\skiasharp.views.forms\\1.68.1.1\\skiasharp.views.forms.1.68.1.1.nupkg.sha512",
@@ -33,6 +35,10 @@
     "C:\\Users\\dmosquera\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\dmosquera\\.nuget\\packages\\system.text.json\\7.0.3\\system.text.json.7.0.3.nupkg.sha512",
     "C:\\Users\\dmosquera\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\dmosquera\\.nuget\\packages\\xamarin.android.support.annotations\\25.4.0.2\\xamarin.android.support.annotations.25.4.0.2.nupkg.sha512",
+    "C:\\Users\\dmosquera\\.nuget\\packages\\xamarin.android.support.compat\\25.4.0.2\\xamarin.android.support.compat.25.4.0.2.nupkg.sha512",
+    "C:\\Users\\dmosquera\\.nuget\\packages\\xamarin.android.support.core.ui\\25.4.0.2\\xamarin.android.support.core.ui.25.4.0.2.nupkg.sha512",
+    "C:\\Users\\dmosquera\\.nuget\\packages\\xamarin.android.support.v7.recyclerview\\25.4.0.2\\xamarin.android.support.v7.recyclerview.25.4.0.2.nupkg.sha512",
     "C:\\Users\\dmosquera\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "C:\\Users\\dmosquera\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",
     "C:\\Users\\dmosquera\\.nuget\\packages\\xamarin.androidx.annotation.experimental\\1.1.0.1\\xamarin.androidx.annotation.experimental.1.1.0.1.nupkg.sha512",

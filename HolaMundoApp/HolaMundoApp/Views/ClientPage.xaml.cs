@@ -33,8 +33,12 @@ namespace HolaMundoApp.Views
                     Label = _viewModel.Client.Name,
                     Position = position
                 });
-
             }
+        }
+
+        private async void Register_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AddClientPage());
         }
     }
 }

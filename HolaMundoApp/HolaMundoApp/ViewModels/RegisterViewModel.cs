@@ -65,7 +65,6 @@ namespace HolaMundoApp.ViewModels
             get { return this.isRunning; }
             set { SetValue(ref this.isRunning, value); }
         }
-
         #endregion
 
         #region Commands

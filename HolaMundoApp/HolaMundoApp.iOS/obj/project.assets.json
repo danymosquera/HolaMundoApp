@@ -288,6 +288,19 @@
           }
         }
       },
+      "Refractored.FloatingActionButtonForms/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/Refractored.FabControl.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/Refractored.FabControl.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
       "SkiaSharp/1.68.1.1": {
         "type": "package",
         "compile": {
@@ -720,6 +733,7 @@
           "Refit": "7.0.0",
           "Refit.HttpClientFactory": "7.0.0",
           "Refit.Newtonsoft.Json": "7.0.0",
+          "Refractored.FloatingActionButtonForms": "2.1.0",
           "Xamarin.CommunityToolkit": "2.0.6",
           "Xamarin.CommunityToolkit.Markup": "2.0.6",
           "Xamarin.Essentials": "1.8.0",
@@ -1021,6 +1035,19 @@
           }
         }
       },
+      "Refractored.FloatingActionButtonForms/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/Refractored.FabControl.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/Refractored.FabControl.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
       "SkiaSharp/1.68.1.1": {
         "type": "package",
         "compile": {
@@ -1431,6 +1458,7 @@
           "Refit": "7.0.0",
           "Refit.HttpClientFactory": "7.0.0",
           "Refit.Newtonsoft.Json": "7.0.0",
+          "Refractored.FloatingActionButtonForms": "2.1.0",
           "Xamarin.CommunityToolkit": "2.0.6",
           "Xamarin.CommunityToolkit.Markup": "2.0.6",
           "Xamarin.Essentials": "1.8.0",
@@ -1732,6 +1760,19 @@
           }
         }
       },
+      "Refractored.FloatingActionButtonForms/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/Refractored.FabControl.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/Refractored.FabControl.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
       "SkiaSharp/1.68.1.1": {
         "type": "package",
         "compile": {
@@ -2142,6 +2183,7 @@
           "Refit": "7.0.0",
           "Refit.HttpClientFactory": "7.0.0",
           "Refit.Newtonsoft.Json": "7.0.0",
+          "Refractored.FloatingActionButtonForms": "2.1.0",
           "Xamarin.CommunityToolkit": "2.0.6",
           "Xamarin.CommunityToolkit.Markup": "2.0.6",
           "Xamarin.Essentials": "1.8.0",
@@ -2440,6 +2482,19 @@
         "runtime": {
           "lib/netstandard2.0/Refit.Newtonsoft.Json.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Refractored.FloatingActionButtonForms/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/Refractored.FabControl.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/Refractored.FabControl.dll": {
+            "related": ".deps.json;.pdb;.xml"
           }
         }
       },
@@ -2856,6 +2911,7 @@
           "Refit": "7.0.0",
           "Refit.HttpClientFactory": "7.0.0",
           "Refit.Newtonsoft.Json": "7.0.0",
+          "Refractored.FloatingActionButtonForms": "2.1.0",
           "Xamarin.CommunityToolkit": "2.0.6",
           "Xamarin.CommunityToolkit.Markup": "2.0.6",
           "Xamarin.Essentials": "1.8.0",
@@ -3154,6 +3210,19 @@
         "runtime": {
           "lib/netstandard2.0/Refit.Newtonsoft.Json.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Refractored.FloatingActionButtonForms/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/Refractored.FabControl.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/Refractored.FabControl.dll": {
+            "related": ".deps.json;.pdb;.xml"
           }
         }
       },
@@ -3570,6 +3639,7 @@
           "Refit": "7.0.0",
           "Refit.HttpClientFactory": "7.0.0",
           "Refit.Newtonsoft.Json": "7.0.0",
+          "Refractored.FloatingActionButtonForms": "2.1.0",
           "Xamarin.CommunityToolkit": "2.0.6",
           "Xamarin.CommunityToolkit.Markup": "2.0.6",
           "Xamarin.Essentials": "1.8.0",
@@ -4081,6 +4151,27 @@
         "refit.newtonsoft.json.7.0.0.nupkg.sha512",
         "refit.newtonsoft.json.nuspec",
         "refit_logo.png"
+      ]
+    },
+    "Refractored.FloatingActionButtonForms/2.1.0": {
+      "sha512": "Uc1P1yNYMr+l7cRosv+2doMqS4VRj2M488NcoPAWAB5Lg9miV8PqfDR0F1CZKwZ42M3biYKO5TdTcjasw5iWZA==",
+      "type": "package",
+      "path": "refractored.floatingactionbuttonforms/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Refractored.FabControl.Droid.dll",
+        "lib/MonoAndroid10/Refractored.FabControl.Droid.pdb",
+        "lib/MonoAndroid10/Refractored.FabControl.Droid.xml",
+        "lib/MonoAndroid10/Refractored.FabControl.dll",
+        "lib/MonoAndroid10/Refractored.FabControl.pdb",
+        "lib/MonoAndroid10/Refractored.FabControl.xml",
+        "lib/netstandard1.0/Refractored.FabControl.deps.json",
+        "lib/netstandard1.0/Refractored.FabControl.dll",
+        "lib/netstandard1.0/Refractored.FabControl.pdb",
+        "lib/netstandard1.0/Refractored.FabControl.xml",
+        "refractored.floatingactionbuttonforms.2.1.0.nupkg.sha512",
+        "refractored.floatingactionbuttonforms.nuspec"
       ]
     },
     "SkiaSharp/1.68.1.1": {
@@ -4883,6 +4974,7 @@
       "Refit >= 7.0.0",
       "Refit.HttpClientFactory >= 7.0.0",
       "Refit.Newtonsoft.Json >= 7.0.0",
+      "Refractored.FloatingActionButtonForms >= 2.1.0",
       "Xamarin.CommunityToolkit >= 2.0.6",
       "Xamarin.CommunityToolkit.Markup >= 2.0.6",
       "Xamarin.Essentials >= 1.7.7",
@@ -4965,6 +5057,10 @@
           "Refit.Newtonsoft.Json": {
             "target": "Package",
             "version": "[7.0.0, )"
+          },
+          "Refractored.FloatingActionButtonForms": {
+            "target": "Package",
+            "version": "[2.1.0, )"
           },
           "Xamarin.CommunityToolkit": {
             "target": "Package",

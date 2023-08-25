@@ -288,6 +288,45 @@
           }
         }
       },
+      "Refractored.FloatingActionButton/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.v7.RecyclerView": "25.4.0.2"
+        },
+        "compile": {
+          "lib/MonoAndroid10/Refractored.Fab.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Refractored.Fab.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "Refractored.FloatingActionButtonForms/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Refractored.FloatingActionButton": "2.1.0",
+          "Xamarin.Forms": "2.4.0.282"
+        },
+        "compile": {
+          "lib/MonoAndroid10/Refractored.FabControl.Droid.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid10/Refractored.FabControl.dll": {
+            "related": ".Droid.pdb;.Droid.xml;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Refractored.FabControl.Droid.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid10/Refractored.FabControl.dll": {
+            "related": ".Droid.pdb;.Droid.xml;.pdb;.xml"
+          }
+        }
+      },
       "SkiaSharp/1.68.1.1": {
         "type": "package",
         "dependencies": {
@@ -496,6 +535,61 @@
         },
         "runtime": {
           "lib/MonoAndroid10/_._": {}
+        }
+      },
+      "Xamarin.Android.Support.Annotations/25.4.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.Annotations.dll": {}
+        }
+      },
+      "Xamarin.Android.Support.Compat/25.4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Annotations": "[25.4.0.2]"
+        },
+        "compile": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.Compat.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid70/Xamarin.Android.Support.Compat.targets": {}
+        }
+      },
+      "Xamarin.Android.Support.Core.UI/25.4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Compat": "[25.4.0.2]"
+        },
+        "compile": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.Core.UI.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.Core.UI.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid70/Xamarin.Android.Support.Core.UI.targets": {}
+        }
+      },
+      "Xamarin.Android.Support.v7.RecyclerView/25.4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Compat": "[25.4.0.2]",
+          "Xamarin.Android.Support.Core.UI": "[25.4.0.2]"
+        },
+        "compile": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.v7.RecyclerView.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.v7.RecyclerView.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid70/Xamarin.Android.Support.v7.RecyclerView.targets": {}
         }
       },
       "Xamarin.AndroidX.Activity/1.2.4.1": {
@@ -2436,6 +2530,7 @@
           "Refit": "7.0.0",
           "Refit.HttpClientFactory": "7.0.0",
           "Refit.Newtonsoft.Json": "7.0.0",
+          "Refractored.FloatingActionButtonForms": "2.1.0",
           "Xamarin.CommunityToolkit": "2.0.6",
           "Xamarin.CommunityToolkit.Markup": "2.0.6",
           "Xamarin.Essentials": "1.8.0",
@@ -2949,6 +3044,40 @@
         "refit_logo.png"
       ]
     },
+    "Refractored.FloatingActionButton/2.1.0": {
+      "sha512": "eT/4xmP50hIm38IqrORreZw0qYsoCCuDiAGVYPstgfAWwzfRthVe0/PlFC6yR4K5TB6dnSA8YZC40o/kQSujwg==",
+      "type": "package",
+      "path": "refractored.floatingactionbutton/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Refractored.Fab.dll",
+        "lib/MonoAndroid10/Refractored.Fab.pdb",
+        "refractored.floatingactionbutton.2.1.0.nupkg.sha512",
+        "refractored.floatingactionbutton.nuspec"
+      ]
+    },
+    "Refractored.FloatingActionButtonForms/2.1.0": {
+      "sha512": "Uc1P1yNYMr+l7cRosv+2doMqS4VRj2M488NcoPAWAB5Lg9miV8PqfDR0F1CZKwZ42M3biYKO5TdTcjasw5iWZA==",
+      "type": "package",
+      "path": "refractored.floatingactionbuttonforms/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Refractored.FabControl.Droid.dll",
+        "lib/MonoAndroid10/Refractored.FabControl.Droid.pdb",
+        "lib/MonoAndroid10/Refractored.FabControl.Droid.xml",
+        "lib/MonoAndroid10/Refractored.FabControl.dll",
+        "lib/MonoAndroid10/Refractored.FabControl.pdb",
+        "lib/MonoAndroid10/Refractored.FabControl.xml",
+        "lib/netstandard1.0/Refractored.FabControl.deps.json",
+        "lib/netstandard1.0/Refractored.FabControl.dll",
+        "lib/netstandard1.0/Refractored.FabControl.pdb",
+        "lib/netstandard1.0/Refractored.FabControl.xml",
+        "refractored.floatingactionbuttonforms.2.1.0.nupkg.sha512",
+        "refractored.floatingactionbuttonforms.nuspec"
+      ]
+    },
     "SkiaSharp/1.68.1.1": {
       "sha512": "fJteGIKAMmLD9tSQgdvZqLqECub6B55pK1MH5QyanLOr8JQ8uUMKKcrAcpocNnmIS/YsUJOL4AD7dO6mAwP7mQ==",
       "type": "package",
@@ -3376,6 +3505,63 @@
         "system.threading.tasks.extensions.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Xamarin.Android.Support.Annotations/25.4.0.2": {
+      "sha512": "4Gkj6OCOJO7jn4drGZxeCCaEVHOjUu0RzsEzZaAZJzrLNqEHqoYrKwIlbsecfEpjbAcyT77Sb8wkZnZNFPdlaA==",
+      "type": "package",
+      "path": "xamarin.android.support.annotations/25.4.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/MonoAndroid70/Xamarin.Android.Support.Annotations.dll",
+        "xamarin.android.support.annotations.25.4.0.2.nupkg.sha512",
+        "xamarin.android.support.annotations.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Compat/25.4.0.2": {
+      "sha512": "k+bZ2ArXV7x1U5xomEiCVRoWHAWr6VKhF6Ziqd1DdK4ZZ4W+J0Dsi5oR2QcQHhIodb7j7cfuDcBAEs0KYvOmuQ==",
+      "type": "package",
+      "path": "xamarin.android.support.compat/25.4.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid70/Xamarin.Android.Support.Compat.targets",
+        "lib/MonoAndroid70/Xamarin.Android.Support.Compat.dll",
+        "xamarin.android.support.compat.25.4.0.2.nupkg.sha512",
+        "xamarin.android.support.compat.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Core.UI/25.4.0.2": {
+      "sha512": "RKU0D2joAnk9bawGoS1/AGg+2CurKd4uK+ToYyueNN0iJTs3K/ZvnUGck8FGl6Iy8Hfy6NySv51ubMlFSXATuA==",
+      "type": "package",
+      "path": "xamarin.android.support.core.ui/25.4.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid70/Xamarin.Android.Support.Core.UI.targets",
+        "lib/MonoAndroid70/Xamarin.Android.Support.Core.UI.dll",
+        "proguard/proguard.txt",
+        "xamarin.android.support.core.ui.25.4.0.2.nupkg.sha512",
+        "xamarin.android.support.core.ui.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.v7.RecyclerView/25.4.0.2": {
+      "sha512": "rBEs2Lk4P967ejGGWf+Wbk4OBuMmvv8XLbpJ2QZ+8YyXecMexzQTFaBj7DeUfqjJTSbAEhQJYltY0g7m6XYA+A==",
+      "type": "package",
+      "path": "xamarin.android.support.v7.recyclerview/25.4.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid70/Xamarin.Android.Support.v7.RecyclerView.targets",
+        "lib/MonoAndroid70/Xamarin.Android.Support.v7.RecyclerView.dll",
+        "proguard/proguard.txt",
+        "xamarin.android.support.v7.recyclerview.25.4.0.2.nupkg.sha512",
+        "xamarin.android.support.v7.recyclerview.nuspec"
       ]
     },
     "Xamarin.AndroidX.Activity/1.2.4.1": {
@@ -5126,6 +5312,7 @@
       "Refit >= 7.0.0",
       "Refit.HttpClientFactory >= 7.0.0",
       "Refit.Newtonsoft.Json >= 7.0.0",
+      "Refractored.FloatingActionButtonForms >= 2.1.0",
       "Xamarin.CommunityToolkit >= 2.0.6",
       "Xamarin.CommunityToolkit.Markup >= 2.0.6",
       "Xamarin.Essentials >= 1.7.7",
@@ -5181,21 +5368,9 @@
             "target": "Package",
             "version": "[7.0.1, )"
           },
-          "Autofac": {
-            "target": "Package",
-            "version": "[7.0.1, )"
-          },
           "Autofac.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[8.0.0, )"
-          },
-          "Autofac.Extensions.DependencyInjection": {
-            "target": "Package",
-            "version": "[8.0.0, )"
-          },
-          "MagicGradients": {
-            "target": "Package",
-            "version": "[1.3.1, )"
           },
           "MagicGradients": {
             "target": "Package",
@@ -5205,27 +5380,11 @@
             "target": "Package",
             "version": "[0.9.1, )"
           },
-          "NControl": {
-            "target": "Package",
-            "version": "[0.9.1, )"
-          },
-          "Newtonsoft.Json": {
-            "target": "Package",
-            "version": "[13.0.3, )"
-          },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
           },
           "Refit": {
-            "target": "Package",
-            "version": "[7.0.0, )"
-          },
-          "Refit": {
-            "target": "Package",
-            "version": "[7.0.0, )"
-          },
-          "Refit.HttpClientFactory": {
             "target": "Package",
             "version": "[7.0.0, )"
           },
@@ -5237,19 +5396,11 @@
             "target": "Package",
             "version": "[7.0.0, )"
           },
-          "Refit.Newtonsoft.Json": {
+          "Refractored.FloatingActionButtonForms": {
             "target": "Package",
-            "version": "[7.0.0, )"
+            "version": "[2.1.0, )"
           },
           "Xamarin.CommunityToolkit": {
-            "target": "Package",
-            "version": "[2.0.6, )"
-          },
-          "Xamarin.CommunityToolkit": {
-            "target": "Package",
-            "version": "[2.0.6, )"
-          },
-          "Xamarin.CommunityToolkit.Markup": {
             "target": "Package",
             "version": "[2.0.6, )"
           },
@@ -5260,14 +5411,6 @@
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.7.7, )"
-          },
-          "Xamarin.Essentials": {
-            "target": "Package",
-            "version": "[1.7.7, )"
-          },
-          "Xamarin.Forms": {
-            "target": "Package",
-            "version": "[5.0.0.2578, )"
           },
           "Xamarin.Forms": {
             "target": "Package",

@@ -19,6 +19,8 @@ C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.iOS\bin\i
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.iOS\bin\iPhoneSimulator\Debug\Refit.dll
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.iOS\bin\iPhoneSimulator\Debug\Refit.HttpClientFactory.dll
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.iOS\bin\iPhoneSimulator\Debug\Refit.Newtonsoft.Json.dll
+C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.iOS\bin\iPhoneSimulator\Debug\Refractored.FabControl.dll
+C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.iOS\bin\iPhoneSimulator\Debug\Refractored.FabControl.pdb
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.iOS\bin\iPhoneSimulator\Debug\SkiaSharp.dll
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.iOS\bin\iPhoneSimulator\Debug\SkiaSharp.Views.iOS.dll
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp.iOS\bin\iPhoneSimulator\Debug\SkiaSharp.Views.Forms.dll

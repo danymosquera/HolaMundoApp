@@ -82,8 +82,8 @@
             </StackLayout>
             
             <StackLayout Grid.Row="7" HorizontalOptions="Center" Orientation="Vertical" >
-                <Button Text="Register" TextColor="White"
-                        Font="Montserrat-Medium.otf" FontSize="{OnPlatform Android=15}"
+                <Button Text="To register" TextColor="White"
+                        Font="Montserrat-Medium.otf" FontSize="{OnPlatform Android=15}" FontAttributes="Bold"
                         BackgroundColor="#2b1b36" BorderColor="#2b1b36"
                         BorderWidth="1.5" WidthRequest="300" HeightRequest="50"
                         CornerRadius="7" Command="{Binding RegisterCommand}"

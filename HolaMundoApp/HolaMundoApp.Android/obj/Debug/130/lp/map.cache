@@ -1,6 +1,8 @@
 FormsViewGroup.dll
 NControl.Droid.dll
 NGraphics.Android.dll
+Refractored.Fab.dll
+Refractored.FabControl.Droid.dll
 SkiaSharp.dll
 SkiaSharp.Views.Android.dll
 SkiaSharp.Views.Forms.dll

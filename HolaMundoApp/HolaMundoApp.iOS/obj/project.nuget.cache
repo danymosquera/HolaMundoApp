@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WzaYmPMbXphdeRSxbit7fmv+D0pBfMALEiD4VB6/fGOE/fxsiwUNbcmy70zTRhZtqeAXr+8dVOYRjZRRFMSWWQ==",
+  "dgSpecHash": "Yg/jB1tt8jIcWMjTJdZ+QZkjAb+BZshCTsacnP9M+3Pi0I3Cbve6XMcjwU5jZZ6lxWubQTI/yx81Yje75XHDMw==",
   "success": true,
   "projectFilePath": "C:\\Users\\dmosquera\\source\\repos\\HolaMundoApp\\HolaMundoApp\\HolaMundoApp.iOS\\HolaMundoApp.iOS.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\dmosquera\\.nuget\\packages\\refit\\7.0.0\\refit.7.0.0.nupkg.sha512",
     "C:\\Users\\dmosquera\\.nuget\\packages\\refit.httpclientfactory\\7.0.0\\refit.httpclientfactory.7.0.0.nupkg.sha512",
     "C:\\Users\\dmosquera\\.nuget\\packages\\refit.newtonsoft.json\\7.0.0\\refit.newtonsoft.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\dmosquera\\.nuget\\packages\\refractored.floatingactionbuttonforms\\2.1.0\\refractored.floatingactionbuttonforms.2.1.0.nupkg.sha512",
     "C:\\Users\\dmosquera\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
     "C:\\Users\\dmosquera\\.nuget\\packages\\skiasharp.views\\1.68.1.1\\skiasharp.views.1.68.1.1.nupkg.sha512",
     "C:\\Users\\dmosquera\\.nuget\\packages\\skiasharp.views.forms\\1.68.1.1\\skiasharp.views.forms.1.68.1.1.nupkg.sha512",

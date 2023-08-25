@@ -79,6 +79,10 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Refractored.FloatingActionButtonForms": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "Xamarin.CommunityToolkit": {
               "target": "Package",
               "version": "[2.0.6, )"
