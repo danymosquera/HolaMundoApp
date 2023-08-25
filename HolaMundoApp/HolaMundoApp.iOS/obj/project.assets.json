@@ -35,6 +35,22 @@
           }
         }
       },
+      "MagicGradients/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.Views.Forms": "1.68.1.1",
+          "Xamarin.Forms": "4.4.0.991265"
+        },
+        "compile": {
+          "lib/netstandard2.0/MagicGradients.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MagicGradients.dll": {}
+        },
+        "build": {
+          "build/MagicGradients.targets": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
         "type": "package",
         "compile": {
@@ -170,6 +186,21 @@
           }
         }
       },
+      "NControl/0.9.1": {
+        "type": "package",
+        "dependencies": {
+          "NGraphics": "0.4.0",
+          "Xamarin.Forms": "2.2.0.45"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/NControl.dll": {},
+          "lib/Xamarin.iOS10/NControl.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/NControl.dll": {},
+          "lib/Xamarin.iOS10/NControl.iOS.dll": {}
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -180,6 +211,25 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "NGraphics/0.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/NGraphics.dll": {
+            "related": ".dll.mdb;.iOS.dll.mdb;.iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/NGraphics.iOS.dll": {
+            "related": ".dll.mdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/NGraphics.dll": {
+            "related": ".dll.mdb;.iOS.dll.mdb;.iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/NGraphics.iOS.dll": {
+            "related": ".dll.mdb;.xml"
           }
         }
       },
@@ -236,6 +286,73 @@
           "lib/netstandard2.0/Refit.Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "SkiaSharp/1.68.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/SkiaSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/tizen-armel/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "tizen-armel"
+          },
+          "runtimes/tizen-x86/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "tizen-x86"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "SkiaSharp.Views/1.68.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.1.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SkiaSharp.Views.Forms/1.68.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.1.1",
+          "SkiaSharp.Views": "1.68.1.1",
+          "Xamarin.Forms": "4.0.0.540366"
+        },
+        "compile": {
+          "ref/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -597,6 +714,8 @@
         "dependencies": {
           "Autofac": "7.1.0",
           "Autofac.Extensions.DependencyInjection": "8.0.0",
+          "MagicGradients": "1.3.1",
+          "NControl": "0.9.1",
           "Newtonsoft.Json": "13.0.3",
           "Refit": "7.0.0",
           "Refit.HttpClientFactory": "7.0.0",
@@ -649,6 +768,22 @@
           }
         }
       },
+      "MagicGradients/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.Views.Forms": "1.68.1.1",
+          "Xamarin.Forms": "4.4.0.991265"
+        },
+        "compile": {
+          "lib/netstandard2.0/MagicGradients.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MagicGradients.dll": {}
+        },
+        "build": {
+          "build/MagicGradients.targets": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
         "type": "package",
         "compile": {
@@ -784,6 +919,21 @@
           }
         }
       },
+      "NControl/0.9.1": {
+        "type": "package",
+        "dependencies": {
+          "NGraphics": "0.4.0",
+          "Xamarin.Forms": "2.2.0.45"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/NControl.dll": {},
+          "lib/Xamarin.iOS10/NControl.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/NControl.dll": {},
+          "lib/Xamarin.iOS10/NControl.iOS.dll": {}
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -794,6 +944,25 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "NGraphics/0.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/NGraphics.dll": {
+            "related": ".dll.mdb;.iOS.dll.mdb;.iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/NGraphics.iOS.dll": {
+            "related": ".dll.mdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/NGraphics.dll": {
+            "related": ".dll.mdb;.iOS.dll.mdb;.iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/NGraphics.iOS.dll": {
+            "related": ".dll.mdb;.xml"
           }
         }
       },
@@ -850,6 +1019,51 @@
           "lib/netstandard2.0/Refit.Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "SkiaSharp/1.68.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/SkiaSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SkiaSharp.Views/1.68.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.1.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SkiaSharp.Views.Forms/1.68.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.1.1",
+          "SkiaSharp.Views": "1.68.1.1",
+          "Xamarin.Forms": "4.0.0.540366"
+        },
+        "compile": {
+          "ref/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -1211,6 +1425,8 @@
         "dependencies": {
           "Autofac": "7.1.0",
           "Autofac.Extensions.DependencyInjection": "8.0.0",
+          "MagicGradients": "1.3.1",
+          "NControl": "0.9.1",
           "Newtonsoft.Json": "13.0.3",
           "Refit": "7.0.0",
           "Refit.HttpClientFactory": "7.0.0",
@@ -1263,6 +1479,22 @@
           }
         }
       },
+      "MagicGradients/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.Views.Forms": "1.68.1.1",
+          "Xamarin.Forms": "4.4.0.991265"
+        },
+        "compile": {
+          "lib/netstandard2.0/MagicGradients.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MagicGradients.dll": {}
+        },
+        "build": {
+          "build/MagicGradients.targets": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
         "type": "package",
         "compile": {
@@ -1398,6 +1630,21 @@
           }
         }
       },
+      "NControl/0.9.1": {
+        "type": "package",
+        "dependencies": {
+          "NGraphics": "0.4.0",
+          "Xamarin.Forms": "2.2.0.45"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/NControl.dll": {},
+          "lib/Xamarin.iOS10/NControl.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/NControl.dll": {},
+          "lib/Xamarin.iOS10/NControl.iOS.dll": {}
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -1408,6 +1655,25 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "NGraphics/0.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/NGraphics.dll": {
+            "related": ".dll.mdb;.iOS.dll.mdb;.iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/NGraphics.iOS.dll": {
+            "related": ".dll.mdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/NGraphics.dll": {
+            "related": ".dll.mdb;.iOS.dll.mdb;.iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/NGraphics.iOS.dll": {
+            "related": ".dll.mdb;.xml"
           }
         }
       },
@@ -1464,6 +1730,51 @@
           "lib/netstandard2.0/Refit.Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "SkiaSharp/1.68.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/SkiaSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SkiaSharp.Views/1.68.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.1.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SkiaSharp.Views.Forms/1.68.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.1.1",
+          "SkiaSharp.Views": "1.68.1.1",
+          "Xamarin.Forms": "4.0.0.540366"
+        },
+        "compile": {
+          "ref/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -1825,6 +2136,8 @@
         "dependencies": {
           "Autofac": "7.1.0",
           "Autofac.Extensions.DependencyInjection": "8.0.0",
+          "MagicGradients": "1.3.1",
+          "NControl": "0.9.1",
           "Newtonsoft.Json": "13.0.3",
           "Refit": "7.0.0",
           "Refit.HttpClientFactory": "7.0.0",
@@ -1877,6 +2190,22 @@
           }
         }
       },
+      "MagicGradients/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.Views.Forms": "1.68.1.1",
+          "Xamarin.Forms": "4.4.0.991265"
+        },
+        "compile": {
+          "lib/netstandard2.0/MagicGradients.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MagicGradients.dll": {}
+        },
+        "build": {
+          "build/MagicGradients.targets": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
         "type": "package",
         "compile": {
@@ -2012,6 +2341,21 @@
           }
         }
       },
+      "NControl/0.9.1": {
+        "type": "package",
+        "dependencies": {
+          "NGraphics": "0.4.0",
+          "Xamarin.Forms": "2.2.0.45"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/NControl.dll": {},
+          "lib/Xamarin.iOS10/NControl.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/NControl.dll": {},
+          "lib/Xamarin.iOS10/NControl.iOS.dll": {}
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -2022,6 +2366,25 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "NGraphics/0.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/NGraphics.dll": {
+            "related": ".dll.mdb;.iOS.dll.mdb;.iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/NGraphics.iOS.dll": {
+            "related": ".dll.mdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/NGraphics.dll": {
+            "related": ".dll.mdb;.iOS.dll.mdb;.iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/NGraphics.iOS.dll": {
+            "related": ".dll.mdb;.xml"
           }
         }
       },
@@ -2078,6 +2441,54 @@
           "lib/netstandard2.0/Refit.Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "SkiaSharp/1.68.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/SkiaSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/win-x64/native/libSkiaSharp.dll": {}
+        }
+      },
+      "SkiaSharp.Views/1.68.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.1.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SkiaSharp.Views.Forms/1.68.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.1.1",
+          "SkiaSharp.Views": "1.68.1.1",
+          "Xamarin.Forms": "4.0.0.540366"
+        },
+        "compile": {
+          "ref/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -2439,6 +2850,8 @@
         "dependencies": {
           "Autofac": "7.1.0",
           "Autofac.Extensions.DependencyInjection": "8.0.0",
+          "MagicGradients": "1.3.1",
+          "NControl": "0.9.1",
           "Newtonsoft.Json": "13.0.3",
           "Refit": "7.0.0",
           "Refit.HttpClientFactory": "7.0.0",
@@ -2491,6 +2904,22 @@
           }
         }
       },
+      "MagicGradients/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.Views.Forms": "1.68.1.1",
+          "Xamarin.Forms": "4.4.0.991265"
+        },
+        "compile": {
+          "lib/netstandard2.0/MagicGradients.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MagicGradients.dll": {}
+        },
+        "build": {
+          "build/MagicGradients.targets": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
         "type": "package",
         "compile": {
@@ -2626,6 +3055,21 @@
           }
         }
       },
+      "NControl/0.9.1": {
+        "type": "package",
+        "dependencies": {
+          "NGraphics": "0.4.0",
+          "Xamarin.Forms": "2.2.0.45"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/NControl.dll": {},
+          "lib/Xamarin.iOS10/NControl.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/NControl.dll": {},
+          "lib/Xamarin.iOS10/NControl.iOS.dll": {}
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -2636,6 +3080,25 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "NGraphics/0.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/NGraphics.dll": {
+            "related": ".dll.mdb;.iOS.dll.mdb;.iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/NGraphics.iOS.dll": {
+            "related": ".dll.mdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/NGraphics.dll": {
+            "related": ".dll.mdb;.iOS.dll.mdb;.iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/NGraphics.iOS.dll": {
+            "related": ".dll.mdb;.xml"
           }
         }
       },
@@ -2692,6 +3155,54 @@
           "lib/netstandard2.0/Refit.Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "SkiaSharp/1.68.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/SkiaSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/win-x86/native/libSkiaSharp.dll": {}
+        }
+      },
+      "SkiaSharp.Views/1.68.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.1.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SkiaSharp.Views.Forms/1.68.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.1.1",
+          "SkiaSharp.Views": "1.68.1.1",
+          "Xamarin.Forms": "4.0.0.540366"
+        },
+        "compile": {
+          "ref/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -3053,6 +3564,8 @@
         "dependencies": {
           "Autofac": "7.1.0",
           "Autofac.Extensions.DependencyInjection": "8.0.0",
+          "MagicGradients": "1.3.1",
+          "NControl": "0.9.1",
           "Newtonsoft.Json": "13.0.3",
           "Refit": "7.0.0",
           "Refit.HttpClientFactory": "7.0.0",
@@ -3112,6 +3625,22 @@
         "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.xml",
         "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.dll",
         "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.xml"
+      ]
+    },
+    "MagicGradients/1.3.1": {
+      "sha512": "zdW8QkgsE9Muiri3NSKt/j2AtoTr4UDCZdwhgs1lOi9s87T8PMek6UKT36QHt7l+5cfSl+nz8LujNDxLfoXMgw==",
+      "type": "package",
+      "path": "magicgradients/1.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/MagicGradients.targets",
+        "build/PreserveMagicGradients.cs",
+        "icon.png",
+        "lib/netstandard2.0/MagicGradients.dll",
+        "magicgradients.1.3.1.nupkg.sha512",
+        "magicgradients.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
@@ -3377,6 +3906,30 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "NControl/0.9.1": {
+      "sha512": "6DWickngPepGH63kL6p++lKPGOgGE84xhqw8CtmYNYVZ/QZSVgX6mCIPS7sxXpBZfvZGSyc2VqwAxd7AB7f+jQ==",
+      "type": "package",
+      "path": "ncontrol/0.9.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/NControl.Droid.dll",
+        "lib/MonoAndroid10/NControl.dll",
+        "lib/Xamarin.iOS10/NControl.dll",
+        "lib/Xamarin.iOS10/NControl.iOS.dll",
+        "lib/portable-net45+wp8+wp80+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/NControl.dll",
+        "lib/win81/NControl.WindowsStore.dll",
+        "lib/win81/NControl.dll",
+        "lib/wp80/NControl.WP80.dll",
+        "lib/wp80/NControl.dll",
+        "lib/wp81/NControl.WP81.dll",
+        "lib/wp81/NControl.dll",
+        "lib/wpa81/NControl.WindowsPhone.dll",
+        "lib/wpa81/NControl.dll",
+        "ncontrol.0.9.1.nupkg.sha512",
+        "ncontrol.nuspec"
+      ]
+    },
     "Newtonsoft.Json/13.0.3": {
       "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "type": "package",
@@ -3405,6 +3958,56 @@
         "newtonsoft.json.13.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "NGraphics/0.4.0": {
+      "sha512": "/q0eSoMhD52Z0fEbWrBF/KgzumVBOSZfJckw9dJnmjU4usdIs6cL6oD/cRkS8SV7fQKqXlZLn+oGjxXVt3nMRQ==",
+      "type": "package",
+      "path": "ngraphics/0.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/NGraphics.Android.dll",
+        "lib/MonoAndroid10/NGraphics.Android.dll.mdb",
+        "lib/MonoAndroid10/NGraphics.Android.xml",
+        "lib/MonoAndroid10/NGraphics.dll",
+        "lib/MonoAndroid10/NGraphics.dll.mdb",
+        "lib/MonoAndroid10/NGraphics.xml",
+        "lib/Xamarin.Mac20/NGraphics.Mac.dll",
+        "lib/Xamarin.Mac20/NGraphics.Mac.dll.mdb",
+        "lib/Xamarin.Mac20/NGraphics.Mac.xml",
+        "lib/Xamarin.Mac20/NGraphics.dll",
+        "lib/Xamarin.Mac20/NGraphics.dll.mdb",
+        "lib/Xamarin.Mac20/NGraphics.xml",
+        "lib/Xamarin.iOS10/NGraphics.dll",
+        "lib/Xamarin.iOS10/NGraphics.dll.mdb",
+        "lib/Xamarin.iOS10/NGraphics.iOS.dll",
+        "lib/Xamarin.iOS10/NGraphics.iOS.dll.mdb",
+        "lib/Xamarin.iOS10/NGraphics.iOS.xml",
+        "lib/Xamarin.iOS10/NGraphics.xml",
+        "lib/net45/NGraphics.Net.dll",
+        "lib/net45/NGraphics.Net.dll.mdb",
+        "lib/net45/NGraphics.Net.xml",
+        "lib/net45/NGraphics.dll",
+        "lib/net45/NGraphics.dll.mdb",
+        "lib/net45/NGraphics.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/NGraphics.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/NGraphics.dll.mdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/NGraphics.xml",
+        "lib/win81/NGraphics.WindowsStore.dll",
+        "lib/win81/NGraphics.WindowsStore.dll.mdb/NGraphics.WindowsStore.pdb",
+        "lib/win81/NGraphics.WindowsStore.xml",
+        "lib/win81/NGraphics.dll",
+        "lib/win81/NGraphics.dll.mdb",
+        "lib/win81/NGraphics.xml",
+        "lib/wpa81/NGraphics.WindowsPhone.dll",
+        "lib/wpa81/NGraphics.WindowsPhone.dll.mdb/NGraphics.WindowsPhone.pdb",
+        "lib/wpa81/NGraphics.WindowsPhone.xml",
+        "lib/wpa81/NGraphics.dll",
+        "lib/wpa81/NGraphics.dll.mdb",
+        "lib/wpa81/NGraphics.xml",
+        "ngraphics.0.4.0.nupkg.sha512",
+        "ngraphics.nuspec"
       ]
     },
     "Refit/7.0.0": {
@@ -3478,6 +4081,116 @@
         "refit.newtonsoft.json.7.0.0.nupkg.sha512",
         "refit.newtonsoft.json.nuspec",
         "refit_logo.png"
+      ]
+    },
+    "SkiaSharp/1.68.1.1": {
+      "sha512": "fJteGIKAMmLD9tSQgdvZqLqECub6B55pK1MH5QyanLOr8JQ8uUMKKcrAcpocNnmIS/YsUJOL4AD7dO6mAwP7mQ==",
+      "type": "package",
+      "path": "skiasharp/1.68.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net45/SkiaSharp.targets",
+        "build/tizen40/SkiaSharp.targets",
+        "buildTransitive/net45/SkiaSharp.targets",
+        "lib/MonoAndroid/SkiaSharp.dll",
+        "lib/MonoAndroid/SkiaSharp.xml",
+        "lib/Xamarin.Mac20/SkiaSharp.dll",
+        "lib/Xamarin.Mac20/SkiaSharp.xml",
+        "lib/Xamarin.TVOS/SkiaSharp.dll",
+        "lib/Xamarin.TVOS/SkiaSharp.xml",
+        "lib/Xamarin.WatchOS/SkiaSharp.dll",
+        "lib/Xamarin.WatchOS/SkiaSharp.xml",
+        "lib/Xamarin.iOS/SkiaSharp.dll",
+        "lib/Xamarin.iOS/SkiaSharp.xml",
+        "lib/net45/SkiaSharp.dll",
+        "lib/net45/SkiaSharp.xml",
+        "lib/netstandard1.3/SkiaSharp.dll",
+        "lib/netstandard1.3/SkiaSharp.xml",
+        "lib/tizen40/SkiaSharp.dll",
+        "lib/tizen40/SkiaSharp.xml",
+        "lib/uap10.0/SkiaSharp.dll",
+        "lib/uap10.0/SkiaSharp.xml",
+        "runtimes/osx/native/libSkiaSharp.dylib",
+        "runtimes/tizen-armel/native/libSkiaSharp.so",
+        "runtimes/tizen-x86/native/libSkiaSharp.so",
+        "runtimes/win-x64/native/libSkiaSharp.dll",
+        "runtimes/win-x86/native/libSkiaSharp.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libSkiaSharp.dll",
+        "skiasharp.1.68.1.1.nupkg.sha512",
+        "skiasharp.nuspec",
+        "xamarin.interactive/SkiaSharp.Workbooks.dll"
+      ]
+    },
+    "SkiaSharp.Views/1.68.1.1": {
+      "sha512": "qpRPbhLFwR6DjxUwzdqWw8BMgKFQ7MMdQdxUt2K0DvsFBiklK6vBBjIkOh58yPLYix1LPXgfD7M6KFO/G4T7OA==",
+      "type": "package",
+      "path": "skiasharp.views/1.68.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid/SkiaSharp.Views.Android.dll",
+        "lib/MonoAndroid/SkiaSharp.Views.Android.xml",
+        "lib/Xamarin.Mac20/SkiaSharp.Views.Mac.dll",
+        "lib/Xamarin.Mac20/SkiaSharp.Views.Mac.xml",
+        "lib/Xamarin.TVOS/SkiaSharp.Views.tvOS.dll",
+        "lib/Xamarin.TVOS/SkiaSharp.Views.tvOS.xml",
+        "lib/Xamarin.WatchOS/SkiaSharp.Views.watchOS.dll",
+        "lib/Xamarin.WatchOS/SkiaSharp.Views.watchOS.xml",
+        "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll",
+        "lib/Xamarin.iOS/SkiaSharp.Views.iOS.xml",
+        "lib/net45/SkiaSharp.Views.Desktop.dll",
+        "lib/net45/SkiaSharp.Views.Desktop.xml",
+        "lib/tizen40/SkiaSharp.Views.Tizen.dll",
+        "lib/tizen40/SkiaSharp.Views.Tizen.xml",
+        "lib/uap10.0/SkiaSharp.Views.UWP.dll",
+        "lib/uap10.0/SkiaSharp.Views.UWP.xml",
+        "runtimes/win10-arm/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
+        "skiasharp.views.1.68.1.1.nupkg.sha512",
+        "skiasharp.views.nuspec"
+      ]
+    },
+    "SkiaSharp.Views.Forms/1.68.1.1": {
+      "sha512": "ahwhImos0hRa4iGQY2M0HZLcvJZNFVe3KFaod2tn1/hPevGOplPReWykfodMLksRzfm1SmxU7hxd121XupPCHw==",
+      "type": "package",
+      "path": "skiasharp.views.forms/1.68.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/net45/SkiaSharp.Views.Forms.targets",
+        "lib/MonoAndroid/SkiaSharp.Views.Forms.dll",
+        "lib/Xamarin.Mac20/SkiaSharp.Views.Forms.dll",
+        "lib/Xamarin.iOS/SkiaSharp.Views.Forms.dll",
+        "lib/tizen40/SkiaSharp.Views.Forms.dll",
+        "lib/uap10.0/SkiaSharp.Views.Forms.dll",
+        "ref/MonoAndroid/SkiaSharp.Views.Forms.dll",
+        "ref/MonoAndroid/SkiaSharp.Views.Forms.xml",
+        "ref/Xamarin.Mac20/SkiaSharp.Views.Forms.dll",
+        "ref/Xamarin.Mac20/SkiaSharp.Views.Forms.xml",
+        "ref/Xamarin.iOS/SkiaSharp.Views.Forms.dll",
+        "ref/Xamarin.iOS/SkiaSharp.Views.Forms.xml",
+        "ref/netstandard1.3/SkiaSharp.Views.Forms.dll",
+        "ref/netstandard1.3/SkiaSharp.Views.Forms.xml",
+        "ref/tizen40/SkiaSharp.Views.Forms.dll",
+        "ref/tizen40/SkiaSharp.Views.Forms.xml",
+        "ref/uap10.0/SkiaSharp.Views.Forms.dll",
+        "ref/uap10.0/SkiaSharp.Views.Forms.xml",
+        "skiasharp.views.forms.1.68.1.1.nupkg.sha512",
+        "skiasharp.views.forms.nuspec"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -4164,6 +4877,8 @@
       "Autofac >= 7.0.1",
       "Autofac.Extensions.DependencyInjection >= 8.0.0",
       "HolaMundoApp >= 1.0.0",
+      "MagicGradients >= 1.3.1",
+      "NControl >= 0.9.1",
       "Newtonsoft.Json >= 13.0.3",
       "Refit >= 7.0.0",
       "Refit.HttpClientFactory >= 7.0.0",
@@ -4226,6 +4941,14 @@
           "Autofac.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[8.0.0, )"
+          },
+          "MagicGradients": {
+            "target": "Package",
+            "version": "[1.3.1, )"
+          },
+          "NControl": {
+            "target": "Package",
+            "version": "[0.9.1, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",

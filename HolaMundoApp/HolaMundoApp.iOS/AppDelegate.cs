@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using NControl.iOS;
 using UIKit;
 
 namespace HolaMundoApp.iOS
@@ -24,7 +25,7 @@ namespace HolaMundoApp.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
-
+            NControlViewRenderer.Init();
             return base.FinishedLaunching(app, options);
         }
     }
