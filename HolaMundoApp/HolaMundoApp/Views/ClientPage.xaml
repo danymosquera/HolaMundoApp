@@ -38,7 +38,7 @@
             <Label Grid.Column="1" Grid.Row="4" Text="{Binding Client.LifeExpectancy}"
                    TextColor="{Binding Client.LifeExpectancy,Converter={StaticResource DoubleToColorConverter}}"/>
           </Grid>
-            <Button VerticalOptions="Center" Text="Udate info" TextColor="White" CornerRadius ="50" Clicked="Register_Clicked" BorderColor = "#2b1b36" Background="#2b1b36" FontSize="{OnPlatform Android=15}" BorderWidth="1.5"/>
+            <Button VerticalOptions="Center" Text="Udate info" TextColor="White" CornerRadius ="50" BorderColor = "#2b1b36" Background="#2b1b36" FontSize="{OnPlatform Android=15}" BorderWidth="1.5" Clicked="Register_Clicked"/>
             <maps:Map x:Name="ClientLocationMap" IsShowingUser="True"/>
     </StackLayout>
   </ContentPage.Content>

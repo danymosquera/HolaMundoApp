@@ -20,13 +20,12 @@
                 <Setter Property="HorizontalTextAlignment" Value="40" />
                 <Setter Property="VerticalTextAlignment" Value="40" />
             </Style>
-            
+
             <DataTemplate x:Key="ProductDefaultTemplate" x:DataType="models:Product">
                 <StackLayout Margin="0,5">
                     <StackLayout.GestureRecognizers>
-                        <TapGestureRecognizer 
-                         Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:ProductsViewModel}}, Path=ProductTappedCommand}"
-                         CommandParameter="{Binding .}"/>
+                        <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:ProductsViewModel}}, Path=ProductTappedCommand}"
+                                              CommandParameter="{Binding .}"/>
                     </StackLayout.GestureRecognizers>
                     <Grid Margin="30,6,0,0">
                         <Grid.ColumnDefinitions>
@@ -52,14 +51,32 @@
                         </Image>
                         <!--<Image  Grid.Column="2" Source="ic_cart"></Image>-->
                     </Grid>
+                    <Grid RowSpacing="2">
+                        <Frame CornerRadius="25" 
+                               Padding ="15" 
+                               Margin="0,0,15,40" 
+                               HorizontalOptions="End" 
+                               VerticalOptions="End">
+                            <xct:Expander Rotation="180">
+                                <xct:Expander.Header>
+                                    <Label Text="Cart"/>
+                                </xct:Expander.Header>
+                                <StackLayout>
+                                    <Label Text="Add"/>
+                                    <Label Text="Del"/>
+                                </StackLayout>
+                            </xct:Expander>
+
+                        </Frame>
+                    </Grid>
                 </StackLayout>
             </DataTemplate>
-            
+
             <controls:ProductTemplateSelector x:Key="ProductTemplateSelector"
                                              DefaultTemplate="{StaticResource ProductDefaultTemplate}" />
         </ResourceDictionary>
     </ContentPage.Resources>
-    
+
     <ContentPage.Behaviors>
         <xct:EventToCommandBehavior EventName="Appearing" Command="{Binding AppearingCommand}"/>
     </ContentPage.Behaviors>
@@ -67,36 +84,16 @@
     <ContentPage.Content>
         <Grid>
             <StackLayout IsVisible="{Binding IsNotBusy}" VerticalOptions="FillAndExpand">
-                
-                    <CollectionView ItemsSource="{Binding Products}"
+                <CollectionView ItemsSource="{Binding Products}"
                  EmptyView="No Products to display"                 
                  ItemTemplate="{StaticResource ProductTemplateSelector}">
-                        <CollectionView.Header>
-                            <Grid>
-                                <Label Text="" TextColor="#2b1b36" FontAttributes="Bold"/>
-                                <Label Grid.Column="1" Text="" TextColor="#2b1b36" FontAttributes="Bold"/>
-                            </Grid>
-                        </CollectionView.Header>
-                    </CollectionView>
-
-                <!--<Grid RowSpacing="2" BackgroundColor="#2b1b36">-->
-                    <Frame CornerRadius="25" 
-                               Padding ="15" 
-                               Margin="0,0,15,30" 
-                               BackgroundColor="Orange"
-                               HorizontalOptions="End" 
-                               VerticalOptions="End">
-                        <xct:Expander Rotation="360">
-                            <xct:Expander.Header>
-                                <Label Text="Add" FontAttributes="Bold"/>
-                            </xct:Expander.Header>
-                            <StackLayout>
-                                <Label Text="Del" FontAttributes="Bold"/>
-                            </StackLayout>
-                        </xct:Expander>
-                    </Frame>
-                <!--</Grid>-->
-
+                    <CollectionView.Header>
+                        <Grid>
+                            <Label Text="" TextColor="#2b1b36" FontAttributes="Bold"/>
+                            <Label Grid.Column="1" Text="" TextColor="#2b1b36" FontAttributes="Bold"/>
+                        </Grid>
+                    </CollectionView.Header>
+                </CollectionView>
             </StackLayout>
             <ActivityIndicator IsRunning="{Binding IsBusy}" VerticalOptions="Center" />
         </Grid>

@@ -10,7 +10,6 @@ C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\AppShell.xaml.g.cs
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\Resources\Styles\Styles.xaml.g.cs
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\Views\AboutPage.xaml.g.cs
-C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\Views\AddClientPage.xaml.g.cs
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\Views\ClientPage.xaml.g.cs
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\Views\ClientsPage.xaml.g.cs
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\Views\LoginPage.xaml.g.cs
@@ -24,3 +23,4 @@ C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\HolaMundoApp.dll
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\refint\HolaMundoApp.dll
 C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\HolaMundoApp.pdb
+C:\Users\dmosquera\source\repos\HolaMundoApp\HolaMundoApp\HolaMundoApp\obj\Debug\netstandard2.1\Views\AddClientPage.xaml.g.cs

@@ -1,44 +1,43 @@
 ﻿using HolaMundoApp.Data.Dto;
 using HolaMundoApp.Data.Models;
 using HolaMundoApp.Services;
-using HolaMundoApp.ViewModels;
 using System;
-using System.Threading.Tasks;
+using System.Collections.Generic;
+using System.Text;
 using System.Windows.Input;
-using Xamarin.CommunityToolkit.ObjectModel;
 using Xamarin.Forms;
+using HolaMundoApp.Resx;
+using HolaMundoApp.Views;
+using System.Runtime.InteropServices.ComTypes;
+using Xamarin.CommunityToolkit.ObjectModel;
 
 namespace HolaMundoApp.ViewModels
 {
-    [QueryProperty(nameof(ClientId), nameof(ClientId))]
     public class AddClientViewModel : BaseViewModel
     {
         private readonly IClientService _clientService;
-
-        private ClientDetailDto _client;
-        private Client _clientAdd;
+        private Client _client;
         private long _clientId;
 
         public AddClientViewModel(IClientService clientService)
         {
-           _clientService = clientService;
-            // AppearingCommand = new AsyncCommand(async () => await Appearing());
+            _clientService = clientService;
+            RegisterCommand = new Command(onRegisterCommand);
+
+            //GuardarCommand = new AsyncCommand(async () => GuardarGastos());
             IsEnabledTxt = true;
         }
 
-        public ClientDetailDto Client { get => _client; set => SetProperty(ref _client, value); }
-        public long ClientId { get => _clientId; set => SetProperty(ref _clientId, value); }
-        public Client ClientAdd { get => _clientAdd; set => SetProperty(ref _clientAdd, value);}
-
-        public string name;
-        public string dna;
-        public double latitude;
-        public double longitude;
-        public bool isRunning;
-        public bool isVisible;
-        public bool isEnabled;
+        private string name;
+        private string dna;
+        private double latitude;
+        private double longitude;
+        private bool isRunning;
+        private bool isVisible;
+        private bool isEnabled;
 
         #region Properties
+        public Command RegisterCommand { get; set; }
         public string Name
         {
             get { return this.name; }
@@ -82,33 +81,17 @@ namespace HolaMundoApp.ViewModels
         }
         #endregion
 
-        public ICommand AppearingCommand { get; set; }
-
-        private async Task Appearing()
+        private void onRegisterCommand(object obj)
         {
-            await LoadClient();
-        }
+            var client = new Client()
+            {
+                Name = this.name,
+                Dna = this.dna,
+                Longitude = this.longitude,
+                Latitude = this.latitude
+            };
 
-        private async Task LoadClient()
-        {
-            if (ClientId < 0)
-            {
-                return;
-            }
-
-            IsBusy = true;
-            try
-            {
-                Client = await _clientService.GetClient(ClientId);
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-            }
-            finally
-            {
-                IsBusy = false;
-            }
+            _clientService.PostClient(client);
         }
     }
 }

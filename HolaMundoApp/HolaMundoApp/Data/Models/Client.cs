@@ -13,4 +13,5 @@ namespace HolaMundoApp.Data.Models
         public double Longitude { get; set; }
 
     }
+
 }

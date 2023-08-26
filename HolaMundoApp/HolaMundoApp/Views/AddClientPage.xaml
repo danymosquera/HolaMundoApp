@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HolaMundoApp.Views.AddClientPage"
-             xmlns:viewModels="clr-namespace:HolaMundoApp.ViewModels"
-             xmlns:converters="clr-namespace:HolaMundoApp.Converters"
-             xmlns:refract="clr-namespace:Refractored.FabControl;assembly=Refractored.FabControl"
+             xmlns:models="clr-namespace:HolaMundoApp.Data.Models"
+             xmlns:viewModels="clr-namespace:HolaMundoApp.ViewModels" 
+             xmlns:utility="clr-namespace:HolaMundoApp.Utilities"
+             utility:ViewModelLocator.AutoWireViewModel="True"
              x:DataType="viewModels:AddClientViewModel"
-             Title="Register Client">
+             x:Class="HolaMundoApp.Views.AddClientPage">
     <ContentPage.Content>
         <Grid RowSpacing="{OnPlatform iOS=25,Android=20}">
             <Grid.RowDefinitions>
@@ -32,8 +32,8 @@
             </Grid.ColumnDefinitions>
 
             <StackLayout Grid.Row="1">
-                <Image Source="ic_clients.png" HeightRequest="{OnPlatform iOS=60,Android=60}" 
-                       WidthRequest="{OnPlatform iOS=60,Android=60}" />
+                <Image Source="ic_clients.png" HeightRequest="{OnPlatform iOS=80,Android=80}" 
+                       WidthRequest="{OnPlatform iOS=80,Android=80}" />
             </StackLayout>
 
             <StackLayout Grid.Row="2" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
@@ -100,9 +100,9 @@
                         BackgroundColor="#2b1b36" BorderColor="#2b1b36"
                         BorderWidth="1.5" WidthRequest="300" HeightRequest="50"
                         CornerRadius="7" 
-                        IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"/>
+                        Command="{Binding RegisterCommand}"
+                        IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}" />
             </StackLayout>
         </Grid>
-
     </ContentPage.Content>
 </ContentPage>

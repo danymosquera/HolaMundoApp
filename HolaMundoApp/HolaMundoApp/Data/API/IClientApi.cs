@@ -14,6 +14,9 @@ namespace HolaMundoApp.Data.API
 
         [Get("/Clients/{id}")]
         Task<ClientDetailDto> GetClient(long id);
+
+        [Post("/Clients")]
+        Task<Client> PostClient(Client client);
     }
 }
 

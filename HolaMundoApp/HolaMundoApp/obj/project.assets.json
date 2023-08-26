@@ -2442,6 +2442,7 @@
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/MonoAndroid10/Refractored.FabControl.Droid.dll",
+        "lib/MonoAndroid10/Refractored.FabControl.Droid.dll.mdb",
         "lib/MonoAndroid10/Refractored.FabControl.Droid.pdb",
         "lib/MonoAndroid10/Refractored.FabControl.Droid.xml",
         "lib/MonoAndroid10/Refractored.FabControl.dll",

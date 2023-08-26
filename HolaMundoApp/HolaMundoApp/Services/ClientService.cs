@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace HolaMundoApp.Services
 {
@@ -48,6 +49,28 @@ namespace HolaMundoApp.Services
                 var error = ex.Message;
             }
             return client;
+        }
+
+        public async Task PostClient(Client client)
+        {
+            try
+            {
+                var clientR = await _clientApi.PostClient(client);
+
+                if (clientR != null)
+                {
+                    await Application.Current.MainPage.DisplayAlert("OK", "Datos trasmitidos con exito", "acept");
+                }
+                else
+                {
+                    await Application.Current.MainPage.DisplayAlert("Error", "Error trasmitiendo informacion", "acept");
+                }
+            }
+            catch (Exception ex)
+            {
+                var error = ex.Message;
+                await Application.Current.MainPage.DisplayAlert("Error", error, "acept");
+            }
         }
     }
 }

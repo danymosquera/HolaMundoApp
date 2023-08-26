@@ -11,10 +11,10 @@ namespace HolaMundoApp
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute(nameof(ProductsPage), typeof(ProductsPage));
-            Routing.RegisterRoute(nameof(ClientPage), typeof(ClientPage));
-            Routing.RegisterRoute(nameof(AddClientPage), typeof(AddClientPage));
             Routing.RegisterRoute(nameof(RegisterPage), typeof(RegisterPage));
+            Routing.RegisterRoute(nameof(ProductPage), typeof(ProductPage));
+            Routing.RegisterRoute(nameof(ClientPage), typeof(ClientPage));
+            //Routing.RegisterRoute(nameof(AddClientPage), typeof(AddClientPage));            
             //Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             //Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
         }

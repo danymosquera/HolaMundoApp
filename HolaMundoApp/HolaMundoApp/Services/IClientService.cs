@@ -1,5 +1,6 @@
 ﻿using HolaMundoApp.Data.Dto;
 using HolaMundoApp.Data.Models;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -10,5 +11,6 @@ namespace HolaMundoApp.Services
         Task<List<Client>> GetClients();
         Task<ClientDetailDto> GetClient(long clientId);
 
+        Task PostClient(Client client);
     }
 }

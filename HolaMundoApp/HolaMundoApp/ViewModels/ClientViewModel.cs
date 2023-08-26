@@ -22,7 +22,7 @@ namespace HolaMundoApp.ViewModels
         public ClientViewModel(IClientService clientService)
         {
             _clientService = clientService;
-            ClientTappedCommand = new AsyncCommand<Client>(OnClientTapped);
+            //ClientTappedCommand = new AsyncCommand<Client>(OnClientTapped);
             AppearingCommand = new AsyncCommand(async () => await Appearing());
         }
 
@@ -60,14 +60,14 @@ namespace HolaMundoApp.ViewModels
             }
         }
 
-        private Task OnClientTapped(Client client)
-        {
-            if (client == null)
-            {
-                return Task.CompletedTask;
-            }
+        //private Task OnClientTapped(Client client)
+        //{
+        //    if (client == null)
+        //    {
+        //        return Task.CompletedTask;
+        //    }
 
-            return Shell.Current.GoToAsync($"{nameof(AddClientPage)}?{nameof(ClientViewModel.ClientId)}={client.Id}");
-        }
+        //    return Shell.Current.GoToAsync($"{nameof(AddClientPage)}?{nameof(ClientViewModel.ClientId)}={client.Id}");
+        //}
     }
 }
